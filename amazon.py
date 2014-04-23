@@ -1,8 +1,14 @@
+#!/usr/bin/env python
+
 """
 Amazon Assignment
 """
 
 import argparse
+import requests
+from bs4 import BeautifulSoup
+from lxml import etree
+import re
 
 class Amazon():
 
@@ -130,6 +136,77 @@ class Amazon():
 
 		self.__reviews = reviews
 
+	def parse_file(self):
+		"""
+		Parse local html files
+		"""
+
+		pass
+
+	def parse_url(self):
+		"""
+		Parse using requests
+		"""
+
+		#TESTING
+		f = open('out.txt', 'w', encoding='utf-8')
+
+		#get data from requests
+		r = requests.get(self.url)
+		bsoup = BeautifulSoup(r.content)
+
+		#TESTING	
+		f.write(bsoup.prettify())
+		f.close()
+
+		#get the name of the book
+		name = ""
+		count = 0
+		for tag in bsoup.find(id="fbt_x_title"):
+			if count != 0:
+				name += tag.string
+			count += 1
+			if count == 2:
+				break
+		print(name.strip())
+
+		#get the author of the book
+		for tag in bsoup.find(class_="bxgy-byline-text"):
+			author = tag.string
+		author = author.split()
+		author = author[1] + " " + author[2]
+		print(author)
+
+		#get the new price
+		tag = bsoup.find(id="buyNewSection")
+		reg = re.compile("\$[0-9]*\.[0-9]*")
+		reg = reg.search(str(tag))
+		if str(type(reg)) != "<class 'NoneType'>":
+			new_price = reg.group()
+			print("New " + new_price)
+
+		#get the rental price
+		tag = bsoup.find(id="rentBuySection")
+		reg = re.compile("\$[0-9]*\.[0-9]*")
+		reg = reg.search(str(tag))
+		if str(type(reg)) != "<class 'NoneType'>":
+			rent_price = reg.group()
+			print("Rent " + rent_price)
+
+		#get the product details
+		tag = bsoup.find(id="productDetailsTable")
+		for item in tag.find_all("li"):
+			#print(item.b.string + " " + str(item.contents))#item.contents[1].strip())
+			#print(str(item.contents[0]) + " " + str(item.contents[1]).strip())
+			#if str(type(item.contents[1])) != "<class 'NoneType'>":
+			if str(item.b.string).strip() != "Average Customer Review:" and str(item.b.string).strip() != "Amazon Best Sellers Rank:":
+				print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+			else:
+				print(item.contents)
+		#print(tag.li.contents[1])
+		#for child in tag.li.children:
+			#print(child)
+
 def parse_command_line():
 	"""
 	Parses the command line arguments and returns them
@@ -137,25 +214,29 @@ def parse_command_line():
 
 	parser = argparse.ArgumentParser()
 	group = parser.add_mutually_exclusive_group(required=True)
-	group.add_argument("-d", help="directory containing html files to parse")
-	group.add_argument("-u", help="url for specified web page")
+	group.add_argument("-d", type=str, help="directory containing html files to parse")
+	group.add_argument("-u", type=str, help="url for specified web page")
 	parser.add_argument("-o", choices=["html", "xml", "csv"], help="output format")
 	return parser.parse_args()
 
 if __name__ == "__main__":
+	#parse command line arguments
 	args = parse_command_line()
+
+	#create Amazon object with file or url
 	if args.d:
 		obj = Amazon(file=args.d)
 	elif args.u:
 		obj = Amazon(url=args.u)
+
+	#get what the output type is
 	if args.o:
 		output_type = args.o
 	else:
 		output_type = "no_output"
 
-	#testing
+	#call parsing function
 	if args.d:
-		print(obj.file)
+		pass
 	elif args.u:
-		print(obj.url)
-	print(output_type)
+		obj.parse_url()
