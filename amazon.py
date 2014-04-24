@@ -9,6 +9,8 @@ import requests
 from bs4 import BeautifulSoup
 from lxml import etree
 import re
+import json
+import os
 
 class Amazon():
 
@@ -16,13 +18,13 @@ class Amazon():
 	class Description
 	"""
 
-	def __init__(self, url="someURL", file="someFile"):
+	def __init__(self, url="someURL", filename="someFile"):
 		"""
 		Method Description
 		"""
 
 		self.__url = url
-		self.__file = file
+		self.__file = filename
 
 	@property
 	def url(self):
@@ -33,7 +35,7 @@ class Amazon():
 		return self.__url
 
 	@property
-	def file(self):
+	def filename(self):
 		"""
 		Getter for directory to look in for html files
 		"""
@@ -88,13 +90,13 @@ class Amazon():
 
 		self.__url = url
 
-	@file.setter
-	def file(self, file):
+	@filename.setter
+	def filename(self, filename):
 		"""
 		Getter for directory to look in for html files
 		"""
 
-		self.__file = file
+		self.__file = filename
 
 	@name.setter
 	def name(self, name):
@@ -232,7 +234,7 @@ class Amazon():
 					D.append(reg.group())
 					print(reg.group())
 				for thing in item.find_all("a"):
-					D.append(reg.group())
+					D.append(thing.string)
 					print(thing.string)
 		J['details'] = D
 
@@ -251,11 +253,145 @@ class Amazon():
 		J['reviews'] = R
 
 		#TESTING
-		f.write(type(J))
-		f.write(J)
+		JSO = json.dumps(J)
+		#JSO = json.loads(JSO)
+		f.write(str(type(JSO)))
+		f.write(str(JSO))
 
 		#TESTING
 		f.close()
+
+		return JSO
+
+	def parse_file(self):
+		"""
+		Parse from html files in current directory
+		"""
+		S = []
+		f = open("html.txt", "w", encoding="utf-8")
+		f3 = open('temp.txt', 'w', encoding='utf-8')
+		f2 = open("out.txt", "w", encoding="utf-8")
+		#loop through the directory (need to eliminate leading /)
+		for fn in os.listdir(os.path.join(os.getcwd(), self.filename)):
+			if os.path.isfile(os.path.join(os.getcwd(), self.filename, fn)):
+				#TESTING
+				print(fn)
+
+				#convert file to soup
+				test = os.path.join(os.getcwd(), self.filename, fn)
+				bsoup = BeautifulSoup(open(test))
+
+				#TESTING
+				f.write(bsoup.prettify())
+
+				#TESTING	
+				f3.write(bsoup.prettify())
+
+				#create JSON object
+				J = dict()
+
+				#get the name of the book
+				name = ""
+				count = 0
+				for tag in bsoup.find(id="fbt_x_title"):
+					if count != 0:
+						name += tag.string
+					count += 1
+					if count == 2:
+						break
+				print(name.strip())
+				J['title'] = name.strip()
+
+				#get the author of the book
+				A = []
+				for tag in bsoup.find_all(class_="author notFaded"):
+					author = tag.a.string
+					A.append(author)
+					print(tag.a.string)
+				J['authors'] = A
+
+				#get the new price
+				price_new = ""
+				tag = bsoup.find(id="buyNewSection")
+				reg = re.compile("\$[0-9]*\.[0-9]*")
+				reg = reg.search(str(tag))
+				if str(type(reg)) != "<class 'NoneType'>":
+					new_price = reg.group()
+					print("New " + new_price)
+				J['price_new'] = new_price
+
+				#get the rental price
+				rent_price = ""
+				tag = bsoup.find(id="rentBuySection")
+				reg = re.compile("\$[0-9]*\.[0-9]*")
+				reg = reg.search(str(tag))
+				if str(type(reg)) != "<class 'NoneType'>":
+					rent_price = reg.group()
+					print("Rent " + rent_price)
+				J['price_rent'] = rent_price
+
+				#get the product details
+				D = []
+				tag = bsoup.find(id="productDetailsTable")
+				for item in tag.find_all("li"):
+					#everything besides avg customer reviews and amazon best sellers rank
+					if str(item.b.string).strip() != "Average Customer Review:" and str(item.b.string).strip() != "Amazon Best Sellers Rank:":
+						D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+						print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+					#average customer review
+					elif str(item.b.string).strip() == "Average Customer Review:":
+						#get number of stars
+						reg = re.compile("([0-9]|\.)* out of 5 stars")
+						reg = reg.search(str(item))
+						if str(type(reg)) != "<class 'NoneType'>":
+							D.append(reg.group())
+							print(reg.group())
+						#get number of reviews 
+						reg = re.compile("([0-9]|,)* customer reviews")
+						reg = reg.search(str(item))
+						if str(type(reg)) != "<class 'NoneType'>":
+							D.append(reg.group())
+							print(reg.group())
+					#amazon best sellers rank
+					else:
+						reg = re.compile("#([0-9]|,)*")
+						reg = reg.search(str(item))
+						if str(type(reg)) != "<class 'NoneType'>":
+							D.append(reg.group())
+							print(reg.group())
+						for thing in item.find_all("a"):
+							D.append(thing.string)
+							print(thing.string)
+				J['details'] = D
+
+				#get the most helpful customer reviews
+
+
+				R = []
+				for tag in bsoup.find_all(id=re.compile("revData-dpReviewsMostHelpful")):
+					item = tag.find_all("div")
+					to_search = str(item[len(item)-1])
+					to_search = remove_html_tags(str(to_search))
+					R.append(str(to_search))
+					f.write(str(to_search))
+					f.write("\n")
+				J['reviews'] = R
+
+				#TESTING
+				JSO = json.dumps(J)
+				#JSO = json.loads(JSO)
+				S.append(JSO)
+				f2.write(str(type(JSO)))
+				f2.write(str(JSO))
+				f2.write("\n\n\n\n")
+
+		#TESTING
+		f.close()
+		f3.close()
+		f2.close()
+
+		return S
+
 
 def remove_html_tags(data):
 	p = re.compile("<.*?>")
@@ -277,9 +413,9 @@ if __name__ == "__main__":
 	#parse command line arguments
 	args = parse_command_line()
 
-	#create Amazon object with file or url
+	#create Amazon object with filename or url
 	if args.d:
-		obj = Amazon(file=args.d)
+		obj = Amazon(filename=args.d)
 	elif args.u:
 		obj = Amazon(url=args.u)
 
@@ -289,8 +425,8 @@ if __name__ == "__main__":
 	else:
 		output_type = "no_output"
 
-	#call parsing function
+	#call parsing function and storing json object
 	if args.d:
-		pass
+		JSON = obj.parse_file()
 	elif args.u:
-		obj.parse_url()
+		JSON = obj.parse_url()
