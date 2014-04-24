@@ -149,7 +149,7 @@ class Amazon():
 		"""
 
 		#TESTING
-		f = open('out.txt', 'w', encoding='utf-8')
+		f = open('temp.txt', 'w', encoding='utf-8')
 
 		#get data from requests
 		r = requests.get(self.url)
@@ -158,6 +158,9 @@ class Amazon():
 		#TESTING	
 		f.write(bsoup.prettify())
 		f.close()
+
+		#create JSON object
+		J = dict()
 
 		#get the name of the book
 		name = ""
@@ -169,35 +172,43 @@ class Amazon():
 			if count == 2:
 				break
 		print(name.strip())
+		J['title'] = name.strip()
 
 		#get the author of the book
-		for tag in bsoup.find(class_="bxgy-byline-text"):
-			author = tag.string
-		author = author.split()
-		author = author[1] + " " + author[2]
-		print(author)
+		A = []
+		for tag in bsoup.find_all(class_="author notFaded"):
+			author = tag.a.string
+			A.append(author)
+			print(tag.a.string)
+		J['authors'] = A
 
 		#get the new price
+		price_new = ""
 		tag = bsoup.find(id="buyNewSection")
 		reg = re.compile("\$[0-9]*\.[0-9]*")
 		reg = reg.search(str(tag))
 		if str(type(reg)) != "<class 'NoneType'>":
 			new_price = reg.group()
 			print("New " + new_price)
+		J['price_new'] = new_price
 
 		#get the rental price
+		rent_price = ""
 		tag = bsoup.find(id="rentBuySection")
 		reg = re.compile("\$[0-9]*\.[0-9]*")
 		reg = reg.search(str(tag))
 		if str(type(reg)) != "<class 'NoneType'>":
 			rent_price = reg.group()
 			print("Rent " + rent_price)
+		J['price_rent'] = rent_price
 
 		#get the product details
+		D = []
 		tag = bsoup.find(id="productDetailsTable")
 		for item in tag.find_all("li"):
 			#everything besides avg customer reviews and amazon best sellers rank
 			if str(item.b.string).strip() != "Average Customer Review:" and str(item.b.string).strip() != "Amazon Best Sellers Rank:":
+				D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
 				print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
 			#average customer review
 			elif str(item.b.string).strip() == "Average Customer Review:":
@@ -205,31 +216,43 @@ class Amazon():
 				reg = re.compile("([0-9]|\.)* out of 5 stars")
 				reg = reg.search(str(item))
 				if str(type(reg)) != "<class 'NoneType'>":
+					D.append(reg.group())
 					print(reg.group())
 				#get number of reviews 
 				reg = re.compile("([0-9]|,)* customer reviews")
 				reg = reg.search(str(item))
 				if str(type(reg)) != "<class 'NoneType'>":
+					D.append(reg.group())
 					print(reg.group())
 			#amazon best sellers rank
 			else:
 				reg = re.compile("#([0-9]|,)*")
 				reg = reg.search(str(item))
 				if str(type(reg)) != "<class 'NoneType'>":
+					D.append(reg.group())
 					print(reg.group())
 				for thing in item.find_all("a"):
+					D.append(reg.group())
 					print(thing.string)
+		J['details'] = D
 
 		#get the most helpful customer reviews
 		#TESTING
 		f = open("out.txt", "w", encoding="utf-8")
 
+		R = []
 		for tag in bsoup.find_all(id=re.compile("revData-dpReviewsMostHelpful")):
 			item = tag.find_all("div")
 			to_search = str(item[len(item)-1])
 			to_search = remove_html_tags(str(to_search))
+			R.append(str(to_search))
 			f.write(str(to_search))
 			f.write("\n")
+		J['reviews'] = R
+
+		#TESTING
+		f.write(type(J))
+		f.write(J)
 
 		#TESTING
 		f.close()
