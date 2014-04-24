@@ -509,40 +509,50 @@ class TableHandler(object):
         pass
 
     # Produce single row of output
-    def row(self, rdata):
+    def row(self, rdata, hdata):
         pass
 
 
 class HTMLTableHandler(TableHandler):
-    def header(self, hdata):
-        print("<!DOCTYPE HTML>\n<html>\n<head>")
-        print("<title>IMDB Movie Resutls</title>\n</head>")
-        print("<body>")
-        print("<table border=\"1\" style=\"300px\">")
-        print("\t<tr>")
-        for h in hdata:
-            print("\t\t<th>{0}</th>".format(h))
-        print("\t</tr>")
+	def header(self, hdata):
+		print("<!DOCTYPE HTML>\n<html>\n<head>")
+		print("<title>Amazon Book Results</title>\n</head>")
+		print("<body>")
+		print("<table border=\"1\" style=\"300px\">")
+		print("\t<tr>")
+		for h in hdata:
+			try:
+				print("\t\t<th>{0}</th>".format(h))
+			except UnicodeEncodeError as u:
+				print("***encoding error***", end='')
+		print("\t</tr>")
 
-    def row(self, rdata):
-        print("\t<tr>")
-        for r in rdata:
-            print("\t\t<td>{0}</td>".format(str(r).strip()))
-        print("\t</tr>")
+	def row(self, rdata, hdata):
+		print("\t<tr>")
+		for r in rdata:
+			try:
+				print("\t\t<td>{0}</td>".format(str(r).strip()))
+			except UnicodeEncodeError as u:
+				print("***encoding error***", end='')
+		print("\t</tr>")
+		print("</table>\n</body>\n</html>")
 
 
 class XMLTableHandler(TableHandler):
-    def header(self, hdata):
-        print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
-        print("<IMDB>")
+	def header(self, hdata):
+		print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
+		print("<Amazon>")
 
-    def row(self, rdata):
-        L = ["Votes", "Rating", "Year", "Title"]
-        print("\t<Movie>")
-        for i in range(0, len(rdata)):
-            print("\t\t<{0}>{1}</{0}>".format(
-                L[i], str(rdata[i]).strip().replace("&", "&amp;")))
-        print("\t</Movie>")
+	def row(self, rdata, hdata):
+		print("\t<Book>")
+		for i in range(0, len(rdata)):
+			try:
+				print("\t\t<{0}>{1}</{0}>".format(
+					hdata[i], str(rdata[i]).strip().replace("&", "&amp;")))
+			except UnicodeEncodeError as u:
+				print("***encoding error***", end='')
+		print("\t</Book>")
+		print("</Amazon>")
 
 
 class CSVTableHandler(TableHandler):
@@ -611,7 +621,7 @@ class MoviePrinter(object):
         self.handler.header(L)
 
         # print movie data
-        self.handler.row(B)
+        self.handler.row(B, L)
 
 if __name__ == "__main__":
 	#parse command line arguments
@@ -638,7 +648,9 @@ if __name__ == "__main__":
 		JSON_book = obj.parse_url()
 		result = persist(JSON_book, True)
 
-	JSON_book = json.loads(JSON_book)
+	#turn into JSON object
+	if args.u:
+		JSON_book = json.loads(JSON_book)
 
 	#produce output of desired type
 	if output_type == "csv":
@@ -649,9 +661,15 @@ if __name__ == "__main__":
 		handler = XMLTableHandler()
 
 	printer = MoviePrinter(handler)
-	printer.print_movie_table(JSON_book)
+	if args.d:
+		for x in JSON_book:
+			printer.print_movie_table(json.loads(x))
+	else:
+		printer.print_movie_table(JSON_book)
 
+	"""
 	if output_type == "html":
 		print("</table>\n</body>\n</html>")
 	elif output_type == "xml":
-		print("</IMDB>")
+		print("</Amazon>")
+	"""
