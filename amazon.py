@@ -188,11 +188,17 @@ class Amazon():
 				print(author)
 		#method 2
 		else:
-			for tag in bsoup.find_all(class_="author notFaded"):
-				temp = tag.find("span")
-				author = temp.string
-				A.append(author)
-				print(temp.contents[0].strip())
+				for tag in bsoup.find_all(class_="author notFaded"):
+					first = tag.a.string
+					if "Visit" in first:
+						temp = tag.find("span")
+						author = temp.contents[0].strip()
+						A.append(author)
+						print(author)
+					else:
+						author = first
+						A.append(author)
+						print(author)
 		J['authors'] = A
 
 		#get the new price
