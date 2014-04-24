@@ -243,8 +243,9 @@ class Amazon():
 					D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip().replace("(", ""))
 					print(str(item.b.string).strip() + " " + str(item.contents[1]).strip().replace("(", ""))
 				else:
-					D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
-					print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+					if str(item.b.string).strip() not in D:
+						D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+						print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
 			#average customer review
 			elif str(item.b.string).strip() == "Average Customer Review:":
 				#get number of stars
@@ -265,10 +266,12 @@ class Amazon():
 				reg = reg.search(str(item))
 				if str(type(reg)) != "<class 'NoneType'>":
 					D.append(reg.group() + "in Books")
-					print(reg.group() + "in Books")
+					print(reg.group() + " in Books")
 				for thing in item.find_all("a"):
-					D.append(thing.string)
-					print(thing.string)
+					if thing.string not in D and thing.string != "Books":
+						if thing.string != "See Top 100 in Books":
+							D.append(thing.string)
+							print(thing.string)
 		J['details'] = D
 
 		#get the most helpful customer reviews
