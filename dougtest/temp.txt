@@ -851,7 +851,7 @@ window.$Nav && $Nav.declare('config.lightningDeals',{});
 window.$Nav && $Nav.declare('config.swmStyleData',{});
 window.$Nav && $Nav.declare('config.ajaxProximity', [141,7,60,150]);
    </script>
-   <!-- navp-Zg44p4MwkHQ83T85/OEE4P0UvNa9yYYbExYHqCjwisIFyV7Gyq4m/fZUVsCh+dgwa4ymXVYWrX4= rid-0B7VP81TE632882TDE1M (Wed Apr 23 21:55:17 2014) -->
+   <!-- navp-XXDeJBOlsj5aZ5snItj0vWeJ6JIEk6X0bg579xqav651afZ9qRkRD3pZIzFO0EpZxeeBJmE67bI= rid-1QGB5QCREWM230PVXY9G (Wed Apr 23 20:54:32 2014) -->
    <style type="text/css">
     <!--
     #navbar select#searchDropdownBox {
@@ -903,14 +903,14 @@ window.$Nav && $Nav.declare('config.ajaxProximity', [141,7,60,150]);
        </div>
       </div>
       <div id="welcomeRowTable" style="height:50px">
-       <div id="nav-ad-background-style" style="background-position: -800px 0px; background-image: url(http://g-ecx.images-amazon.com/images/G/01/img14/traffic/swms/TRAFFIC_mothers-day_swms_300x50_v2-1._V337784886_.jpg);  height: 56px; margin-bottom: -6px; position: relative;background-repeat: no-repeat;">
+       <div id="nav-ad-background-style" style="background-position: -800px 0px; background-image: url(http://g-ecx.images-amazon.com/images/G/01/img14/traffic/swms/TRAFFIC_mothers-day_swms_300x50_v2-2._V339040361_.jpg);  height: 56px; margin-bottom: -6px; position: relative;background-repeat: no-repeat;">
         <div id="navSwmSlot">
-         <div id="navSwmHoliday" style="background-image: url(http://g-ecx.images-amazon.com/images/G/01/img14/traffic/swms/TRAFFIC_mothers-day_swms_300x50_v2-1._V337784886_.jpg); width: 300px; height: 50px; overflow: hidden;">
-          <img alt="Mother's Day" border="0" height="50px" src="http://g-ecx.images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V386942464_.gif" usemap="#nav-swm-holiday-map" width="300px"/>
+         <div id="navSwmHoliday" style="background-image: url(http://g-ecx.images-amazon.com/images/G/01/img14/traffic/swms/TRAFFIC_mothers-day_swms_300x50_v2-2._V339040361_.jpg); width: 300px; height: 50px; overflow: hidden;">
+          <img alt="Mother's Day Savings" border="0" height="50px" src="http://g-ecx.images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V386942464_.gif" usemap="#nav-swm-holiday-map" width="300px"/>
          </div>
          <div style="display: none;">
           <map id="nav-swm-holiday-map" name="nav-swm-holiday-map">
-           <area alt="Mother's Day" coords="1,2,300,50" href="/Mothers-Day-Gifts-Sale/b?ie=UTF8&amp;node=502659011" shape="rect">
+           <area alt="Mother's Day Savings" coords="1,2,300,50" href="/Mothers-Day-Gifts-Sale/b?ie=UTF8&amp;node=502659011" shape="rect">
            </area>
           </map>
          </div>
@@ -1215,7 +1215,7 @@ window.$Nav && $Nav.declare('config.subnavFlyoutUrl',
 window.$Nav && $Nav.declare('config.readyOnATF', false);
 
 window.$Nav && $Nav.declare('config.dynamicMenuArgs',
-  {"rid":"0B7VP81TE632882TDE1M","isPrime":0,"primeMenuWidth":310});
+  {"rid":"1QGB5QCREWM230PVXY9G","isPrime":0,"primeMenuWidth":310});
 
 window.$Nav && $Nav.declare('config.signOutText',
   null);
@@ -1265,7 +1265,7 @@ window.$Nav && $Nav.declare('config.signInTooltip',false);
    <div id="PrimeStripeContent">
    </div>
    <div name="goKindleStaticPopDiv" style="text-align:center;background-repeat: repeat;background-image:url('http://g-ecx.images-amazon.com/images/G/01/digital/fiona/general/green-fade-background._V192188963_.gif');margin: 0px -8px;">
-    <a href="http://www.amazon.com/Game-Thrones-Song-Fire-Book-ebook/dp/B000QCS8TW">
+    <a href="http://www.amazon.com/Game-Thrones-Song-Fire-Book-ebook/dp/B000QCS8TW/ref=dp_kinw_strp_1">
      <strong>
       A Game of Thrones: A Song of Ice and Fire: Book One
      </strong>
@@ -1286,33 +1286,33 @@ window.$Nav && $Nav.declare('config.signInTooltip',false);
     </div>
     <div id="rightCol">
      <div class="feature" data-feature-name="tellAFriendBylineBox" id="tellAFriendBylineBox_feature_div">
-      <div class="a-section a-text-center" data-close="Close" data-dest="/gp/pdp/taf/dpPop.html/ref=cm_sw_p_view_dp_1Kjwtb07P1E382D1?ie=UTF8&amp;redirectLocation=dp%2F0553593714%2F%23_swftext_Swf&amp;isEmail=0&amp;placementID=dp_1Kjwtb07P1E382D1&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;id=0553593714&amp;ra=taf&amp;tt=sh&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;forceSprites=1&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714" data-title="Share this item via Email" id="tell-a-friend">
-       <span class="a-declarative" data-a-modal='{"cache":"false","width":"480","name":"swf","url":"/gp/pdp/taf/dpPop.html/ref=cm_sw_p_view_dp_1Kjwtb07P1E382D1?ie=UTF8&amp;redirectLocation=dp%2F0553593714%2F%23_swftext_Swf&amp;isEmail=0&amp;placementID=dp_1Kjwtb07P1E382D1&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;id=0553593714&amp;ra=taf&amp;tt=sh&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;forceSprites=1&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714&amp;isDPX=1","header":"Share this item via Email"}' data-action="a-modal">
-        <a class="a-link-normal email" href="/gp/pdp/taf/ref=cm_sw_l_view_dp_1Kjwtb07P1E382D1?ie=UTF8&amp;itemInfo=0553593714&amp;placementID=dp_1Kjwtb07P1E382D1&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;type=SH&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714" id="swfText" title="Share via e-mail">
+      <div class="a-section a-text-center" data-close="Close" data-dest="/gp/pdp/taf/dpPop.html/ref=cm_sw_p_view_dp_4Riwtb1G5CEM3PX9?ie=UTF8&amp;redirectLocation=dp%2F0553593714%2F%23_swftext_Swf&amp;isEmail=0&amp;placementID=dp_4Riwtb1G5CEM3PX9&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;id=0553593714&amp;ra=taf&amp;tt=sh&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;forceSprites=1&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714" data-title="Share this item via Email" id="tell-a-friend">
+       <span class="a-declarative" data-a-modal='{"cache":"false","width":"480","name":"swf","url":"/gp/pdp/taf/dpPop.html/ref=cm_sw_p_view_dp_4Riwtb1G5CEM3PX9?ie=UTF8&amp;redirectLocation=dp%2F0553593714%2F%23_swftext_Swf&amp;isEmail=0&amp;placementID=dp_4Riwtb1G5CEM3PX9&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;id=0553593714&amp;ra=taf&amp;tt=sh&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;forceSprites=1&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714&amp;isDPX=1","header":"Share this item via Email"}' data-action="a-modal">
+        <a class="a-link-normal email" href="/gp/pdp/taf/ref=cm_sw_l_view_dp_4Riwtb1G5CEM3PX9?ie=UTF8&amp;itemInfo=0553593714&amp;placementID=dp_4Riwtb1G5CEM3PX9&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;type=SH&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714" id="swfText" title="Share via e-mail">
          Share
         </a>
         <span class="a-letter-space">
         </span>
-        <a class="a-link-normal email" href="/gp/pdp/taf/ref=cm_sw_l_view_dp_1Kjwtb07P1E382D1?ie=UTF8&amp;itemInfo=0553593714&amp;placementID=dp_1Kjwtb07P1E382D1&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;type=SH&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714" id="swfImage" title="Share via e-mail">
+        <a class="a-link-normal email" href="/gp/pdp/taf/ref=cm_sw_l_view_dp_4Riwtb1G5CEM3PX9?ie=UTF8&amp;itemInfo=0553593714&amp;placementID=dp_4Riwtb1G5CEM3PX9&amp;parentASIN=0553593714&amp;contentName=item&amp;contentType=asin&amp;isDynamicSWF=0&amp;contentID=0553593714&amp;emailTemplate=%2Fgp%2Fpdp%2Fcommon%2Femail%2Fshare-product&amp;type=SH&amp;viaAccount=amazon&amp;relatedAccounts=amazondeals%2Camazonmp3&amp;referer=http%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252F0553593714%252Fref%253D&amp;contentURI=%2Fdp%2F0553593714" id="swfImage" title="Share via e-mail">
          <i class="a-icon a-icon-share-email">
          </i>
         </a>
         <span class="a-letter-space">
         </span>
        </span>
-       <a class="a-link-normal" data-height="400" href="/gp/redirect.html/ref=cm_sw_cl_fa_dp_1Kjwtb07P1E382D1?_encoding=UTF8&amp;location=http%3A%2F%2Fwww.facebook.com%2Fshare.php%3Fu%3Dhttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_fa_dp_1Kjwtb07P1E382D1&amp;token=6BD0FB927CC51E76FF446584B1040F70EA7E88E1" title="Share on Facebook">
+       <a class="a-link-normal" data-height="400" href="/gp/redirect.html/ref=cm_sw_cl_fa_dp_4Riwtb1G5CEM3PX9?_encoding=UTF8&amp;location=http%3A%2F%2Fwww.facebook.com%2Fshare.php%3Fu%3Dhttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_fa_dp_4Riwtb1G5CEM3PX9&amp;token=6BD0FB927CC51E76FF446584B1040F70EA7E88E1" title="Share on Facebook">
         <i class="a-icon a-icon-share-facebook">
         </i>
        </a>
        <span class="a-letter-space">
        </span>
-       <a class="a-link-normal" data-height="400" href="/gp/redirect.html/ref=cm_sw_cl_tw_dp_1Kjwtb07P1E382D1?_encoding=UTF8&amp;location=http%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Foriginal_referer%3Dhttp%25253A%25252F%25252Fwww.amazon.com%25252Fgp%25252Fproduct%25252F0553593714%25252Fref%25253Dcm_sw_r_tw_dp_1Kjwtb07P1E382D1%26text%3DA%2520Game%2520of%2520Thrones%2520(A%2520Song%2520of%2520Ice%2520and%2520Fire%252C%2520Book%25201)%2520by%2520George%2520R.R.%2520Martin%26related%3Damazondeals%252Camazonmp3%26url%3Dhttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_tw_dp_1Kjwtb07P1E382D1%26via%3Damazon&amp;token=7A1A4AE8F6CE0BD277D8295E58702D283F329C0F" title="Share on Twitter">
+       <a class="a-link-normal" data-height="400" href="/gp/redirect.html/ref=cm_sw_cl_tw_dp_4Riwtb1G5CEM3PX9?_encoding=UTF8&amp;location=http%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Foriginal_referer%3Dhttp%25253A%25252F%25252Fwww.amazon.com%25252Fgp%25252Fproduct%25252F0553593714%25252Fref%25253Dcm_sw_r_tw_dp_4Riwtb1G5CEM3PX9%26text%3DA%2520Game%2520of%2520Thrones%2520(A%2520Song%2520of%2520Ice%2520and%2520Fire%252C%2520Book%25201)%2520by%2520George%2520R.R.%2520Martin%26related%3Damazondeals%252Camazonmp3%26url%3Dhttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_tw_dp_4Riwtb1G5CEM3PX9%26via%3Damazon&amp;token=7A1A4AE8F6CE0BD277D8295E58702D283F329C0F" title="Share on Twitter">
         <i class="a-icon a-icon-share-twitter">
         </i>
        </a>
        <span class="a-letter-space">
        </span>
-       <a class="a-link-normal" data-height="570" href="/gp/redirect.html/ref=cm_sw_cl_pi_dp_1Kjwtb07P1E382D1?_encoding=UTF8&amp;location=http%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%3Furl%3Dhttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_pi_dp_1Kjwtb07P1E382D1%26title%3DA%2520Game%2520of%2520Thrones%2520(A%2520Song%2520of%2520Ice%2520and%2520Fire%252C%2520Book%25201)%2520by%2520George%2520R.R.%2520Martin%26description%3DA%2520Game%2520of%2520Thrones%2520(A%2520Song%2520of%2520Ice%2520and%2520Fire%252C%2520Book%25201)%2520by%2520George%2520R.R.%2520Martin%252Chttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_pi_dp_1Kjwtb07P1E382D1%26media%3Dhttp%253A%252F%252Fecx.images-amazon.com%252Fimages%252FI%252F5163N91r6lL.jpg&amp;token=9F58B366258E1A8B5259E9BEF3482E02341F42D3" title="Pin it on Pinterest">
+       <a class="a-link-normal" data-height="570" href="/gp/redirect.html/ref=cm_sw_cl_pi_dp_4Riwtb1G5CEM3PX9?_encoding=UTF8&amp;location=http%3A%2F%2Fpinterest.com%2Fpin%2Fcreate%2Fbutton%3Furl%3Dhttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_pi_dp_4Riwtb1G5CEM3PX9%26title%3DA%2520Game%2520of%2520Thrones%2520(A%2520Song%2520of%2520Ice%2520and%2520Fire%252C%2520Book%25201)%2520by%2520George%2520R.R.%2520Martin%26description%3DA%2520Game%2520of%2520Thrones%2520(A%2520Song%2520of%2520Ice%2520and%2520Fire%252C%2520Book%25201)%2520by%2520George%2520R.R.%2520Martin%252Chttp%253A%252F%252Fwww.amazon.com%252Fdp%252F0553593714%252Fref%253Dcm_sw_r_pi_dp_4Riwtb1G5CEM3PX9%26media%3Dhttp%253A%252F%252Fecx.images-amazon.com%252Fimages%252FI%252F5163N91r6lL.jpg&amp;token=9F58B366258E1A8B5259E9BEF3482E02341F42D3" title="Pin it on Pinterest">
         <i class="a-icon a-icon-share-pinterest">
         </i>
        </a>
@@ -1345,7 +1345,7 @@ window.$Nav && $Nav.declare('config.signInTooltip',false);
        <form action="/gp/product/handle-buy-box/ref=dp_start-bbf_1_glance" class="a-content" id="addToCart" method="post">
         <input id="session-id" name="session-id" type="hidden" value="000-0000000-0000000"/>
         <input id="ASIN" name="ASIN" type="hidden" value="0553593714"/>
-        <input id="offerListingID" name="offerListingID" type="hidden" value="sMW67%2BSBz8PtkHdnrJAstdcGuept8pFp0r342lZ%2B5XK4DypQy2yeztyDh0T5ILPeMQeR4Gqx1Z9aWmKTXBwEolKQSgZNRBytli%2Biwltgx%2FTZbw%2BW6JZrNw%3D%3D"/>
+        <input id="offerListingID" name="offerListingID" type="hidden" value="XIFfRCApOtVKc3t8I8u%2FWe86AUviw0z9Y2XtgP%2B8qHKZ7jm4HcFgeRZJ89n5fUfs1bbpFjEh8G2pfh4%2Fx52%2BkQQUYfcIlA8yDu3MFjplePxdSAP6cxUSvQ%3D%3D"/>
         <input id="isMerchantExclusive" name="isMerchantExclusive" type="hidden" value="0"/>
         <input id="merchantID" name="merchantID" type="hidden" value="ATVPDKIKX0DER"/>
         <input id="isAddon" name="isAddon" type="hidden" value="0"/>
@@ -2431,7 +2431,7 @@ amznJQ.available("popover", function() {
             <td class="a-text-right dp-new-col">
              <a class="a-link-normal" href="/gp/offer-listing/B00BSYRPC8/ref=tmm_other_meta_binding_new_olp_0?ie=UTF8&amp;condition=new&amp;sr=&amp;qid=">
               <span>
-               $7.71
+               $7.69
               </span>
              </a>
             </td>
@@ -2661,7 +2661,7 @@ amznJQ.available("popover", function() {
            <span class="tmm-olp-links">
             <span class="olp-used olp-link">
              <a class="a-size-mini a-link-normal" href="/gp/offer-listing/0553593714/ref=tmm_mmp_used_olp_sr?ie=UTF8&amp;condition=used&amp;sr=&amp;qid=">
-              59 Used
+              58 Used
               <span class="olp-from">
                from
               </span>
@@ -3432,7 +3432,7 @@ if (document.body.childNodes.length) {
         <ul id="fbt_item_details" tabindex="-1">
          <li class="fbt_item">
           <label>
-           <input checked="checked" class="check" id="fbt_x_check" name="offeringID.1" style="display: none;" type="checkbox" value="Uccu0dnMsxcp6mCa%2Bak3cxdJTUg4E3a1E4zfT9%2F2cNF3HfvuBTpsUFqI0eAIXTHpuswY0RVEa%2F%2B1dXWmodZZ%2BGiRs8Xw%2FxrVfrGJc9DB3MhFzXU7y91pYw%3D%3D"/>
+           <input checked="checked" class="check" id="fbt_x_check" name="offeringID.1" style="display: none;" type="checkbox" value="%2FsC%2Ft4XQR0JwaOY9GCOcR6QYCjB6JgOtePFYkqh394maYMSVOu9TkllukHHtbEc%2B%2BmRAeSv1egu2Djl508ghLQGhqy4sqoLjBVx1aG0eDNh2yEb4%2FwQzsw%3D%3D"/>
            <span id="fbt_x_title">
             <strong>
              This item:
@@ -3458,7 +3458,7 @@ if (document.body.childNodes.length) {
           <input checked="checked" class="check" id="fbt_y_check" name="offeringID.2" style="display: none;" title="
 
 
-A Clash of Kings (HBO Tie-in Edition): A Song of Ice and Fire: Book Two by George R.R. Martin [Mass Market Paperback]" type="checkbox" value="WPP4ZcST10Ml%2F09lWnwxUELoeQB8lm8P1h8VaQMB1C3hL7q43MqSGTHuIaA2ALt%2FTAD7%2FtaHoIPY0RUU1niEu6yCffXGtw7uyKQDhnVOXPNwrx5DxYxZzQ%3D%3D"/>
+A Clash of Kings (HBO Tie-in Edition): A Song of Ice and Fire: Book Two by George R.R. Martin [Mass Market Paperback]" type="checkbox" value="7G8DfQFSLmMb6npLJzYCZ5oIDeItmltAVflCb6NU3YuxGXr%2FlNOI1UhuMKP1OG8vsXCXi3M114A3Vs3P9dM02l3md7H9cdura9jv8Yn5g584%2FR3gl6wxJw%3D%3D"/>
           <input name="discoveredAsins.1" type="hidden" value="0345535421"/>
           <span id="fbt_y_title">
            <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/dp/0345535421">
@@ -3483,7 +3483,7 @@ A Clash of Kings (HBO Tie-in Edition): A Song of Ice and Fire: Book Two by Georg
           <input checked="checked" class="check" id="fbt_z_check" name="offeringID.3" style="display: none;" title="
 
 
-A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass Market Paperback]" type="checkbox" value="RXt4%2FhsoJOeBlNemYCQj9qcrmoh3VacNllQZsyhMu2F8MZkTai6w9KVIlUWOP2Y9vpeGmdxT2o0ZlQOOxEVA7CFmN%2F7z3jIzf6aG1nCFrFQ%3D"/>
+A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass Market Paperback]" type="checkbox" value="UcIWiMzJM2v64%2Fk%2FIByF2bJiKZgNF%2BbvA4s%2FCi907PqkBuPyfg3wkt%2BobP3FambW8SReYFE%2BiSkgBoU%2FJ74Kz329%2F%2BS%2BF9lynTPPzTo0PuY%3D"/>
           <input name="discoveredAsins.2" type="hidden" value="055357342X"/>
           <span id="fbt_z_title">
            <a href="http://www.amazon.com/Storm-Swords-Song-Fire-Book/dp/055357342X">
@@ -3510,7 +3510,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
      </div>
     </div>
     <div id="fbt_item_data" style="display:none;">
-     {"currencyCode":"USD","itemData":[{"priceBreaksMAP":null,"buyingPrice":5.99,"ASIN":"0553593714","isPreorder":0},{"priceBreaksMAP":null,"buyingPrice":8.99,"ASIN":"0345535421","isPreorder":0},{"priceBreaksMAP":null,"buyingPrice":6.04,"ASIN":"055357342X","isPreorder":0}],"shippingId":"0553593714::Uccu0dnMsxcp6mCa%2Bak3cxdJTUg4E3a1E4zfT9%2F2cNF3HfvuBTpsUFqI0eAIXTHpuswY0RVEa%2F%2B1dXWmodZZ%2BGiRs8Xw%2FxrVfrGJc9DB3MhFzXU7y91pYw%3D%3D,0345535421::WPP4ZcST10Ml%2F09lWnwxUELoeQB8lm8P1h8VaQMB1C3hL7q43MqSGTHuIaA2ALt%2FTAD7%2FtaHoIPY0RUU1niEu6yCffXGtw7uyKQDhnVOXPNwrx5DxYxZzQ%3D%3D,055357342X::RXt4%2FhsoJOeBlNemYCQj9qcrmoh3VacNllQZsyhMu2F8MZkTai6w9KVIlUWOP2Y9vpeGmdxT2o0ZlQOOxEVA7CFmN%2F7z3jIzf6aG1nCFrFQ%3D","sprites":{"addToWishlist":["wl_one","wl_two","wl_three"],"addToCart":["s_addToCart","s_addBothToCart","s_add3ToCart"],"preorder":["s_preorderThis","s_preorderBoth","s_preorderAll3"]},"shippingDetails":{"xz":"availability","yz":"same","xy":"availability","xyz":"availability"},"tags":["x","y","z"],"strings":{"showDetails":"Show details","differentAvailabilityAll":"Some of these items ship sooner than the others.","addToWishlist":["add to wishlist","Add both to Wish List","Add all three to Wish List"],"shippingError":"An error occurred, please try again","differentAvailability":"One of these items ships sooner than the other.","preorder":["Pre-order this item","Pre-order both items","Pre-order all three items"],"addToCart":["Add to Cart","Add both to Cart","Add all three to Cart"],"showDetailsDefault":"Show availability and shipping details","priceLabel":["Price:","Price for both:","Price for all three:"],"hideDetailsDefault":"Hide availability and shipping details","hideDetails":"Hide details"}}
+     {"currencyCode":"USD","itemData":[{"priceBreaksMAP":null,"buyingPrice":5.99,"ASIN":"0553593714","isPreorder":0},{"priceBreaksMAP":null,"buyingPrice":8.99,"ASIN":"0345535421","isPreorder":0},{"priceBreaksMAP":null,"buyingPrice":6.04,"ASIN":"055357342X","isPreorder":0}],"shippingId":"0553593714::%2FsC%2Ft4XQR0JwaOY9GCOcR6QYCjB6JgOtePFYkqh394maYMSVOu9TkllukHHtbEc%2B%2BmRAeSv1egu2Djl508ghLQGhqy4sqoLjBVx1aG0eDNh2yEb4%2FwQzsw%3D%3D,0345535421::7G8DfQFSLmMb6npLJzYCZ5oIDeItmltAVflCb6NU3YuxGXr%2FlNOI1UhuMKP1OG8vsXCXi3M114A3Vs3P9dM02l3md7H9cdura9jv8Yn5g584%2FR3gl6wxJw%3D%3D,055357342X::UcIWiMzJM2v64%2Fk%2FIByF2bJiKZgNF%2BbvA4s%2FCi907PqkBuPyfg3wkt%2BobP3FambW8SReYFE%2BiSkgBoU%2FJ74Kz329%2F%2BS%2BF9lynTPPzTo0PuY%3D","sprites":{"addToWishlist":["wl_one","wl_two","wl_three"],"addToCart":["s_addToCart","s_addBothToCart","s_add3ToCart"],"preorder":["s_preorderThis","s_preorderBoth","s_preorderAll3"]},"shippingDetails":{"xz":"availability","yz":"same","xy":"availability","xyz":"availability"},"tags":["x","y","z"],"strings":{"showDetails":"Show details","differentAvailabilityAll":"Some of these items ship sooner than the others.","addToWishlist":["add to wishlist","Add both to Wish List","Add all three to Wish List"],"shippingError":"An error occurred, please try again","differentAvailability":"One of these items ships sooner than the other.","preorder":["Pre-order this item","Pre-order both items","Pre-order all three items"],"addToCart":["Add to Cart","Add both to Cart","Add all three to Cart"],"showDetailsDefault":"Show availability and shipping details","priceLabel":["Price:","Price for both:","Price for all three:"],"hideDetailsDefault":"Hide availability and shipping details","hideDetails":"Hide details"}}
     </div>
     <div class="is-aui" id="purchase-sims-feature">
      <a name="purchase">
@@ -3575,7 +3575,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
               <span class="rating-stars">
                <span class="crAvgStars" style="white-space:no-wrap;">
                 <span class="asinReviewsSummary" name="0345535421">
-                 <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                 <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                   <span class="auiTestSprite s_star_4_5 " title="4.5 out of 5 stars">
                    <span>
                     4.5 out of 5 stars
@@ -3584,7 +3584,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
                  </a>
                 </span>
                 (
-                <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                  2,426
                 </a>
                 )
@@ -3628,7 +3628,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
               <span class="rating-stars">
                <span class="crAvgStars" style="white-space:no-wrap;">
                 <span class="asinReviewsSummary" name="055357342X">
-                 <a href="http://www.amazon.com/Storm-Swords-Song-Fire-Book/product-reviews/055357342X?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                 <a href="http://www.amazon.com/Storm-Swords-Song-Fire-Book/product-reviews/055357342X?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                   <span class="auiTestSprite s_star_4_5 " title="4.6 out of 5 stars">
                    <span>
                     4.6 out of 5 stars
@@ -3637,7 +3637,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
                  </a>
                 </span>
                 (
-                <a href="http://www.amazon.com/Storm-Swords-Song-Fire-Book/product-reviews/055357342X?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                <a href="http://www.amazon.com/Storm-Swords-Song-Fire-Book/product-reviews/055357342X?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                  2,766
                 </a>
                 )
@@ -3681,7 +3681,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
               <span class="rating-stars">
                <span class="crAvgStars" style="white-space:no-wrap;">
                 <span class="asinReviewsSummary" name="055358202X">
-                 <a href="http://www.amazon.com/Feast-Crows-Song-Fire-Thrones/product-reviews/055358202X?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                 <a href="http://www.amazon.com/Feast-Crows-Song-Fire-Thrones/product-reviews/055358202X?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                   <span class="auiTestSprite s_star_3_5 " title="3.6 out of 5 stars">
                    <span>
                     3.6 out of 5 stars
@@ -3690,7 +3690,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
                  </a>
                 </span>
                 (
-                <a href="http://www.amazon.com/Feast-Crows-Song-Fire-Thrones/product-reviews/055358202X?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                <a href="http://www.amazon.com/Feast-Crows-Song-Fire-Thrones/product-reviews/055358202X?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                  3,015
                 </a>
                 )
@@ -3732,7 +3732,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
               <span class="rating-stars">
                <span class="crAvgStars" style="white-space:no-wrap;">
                 <span class="asinReviewsSummary" name="0553582011">
-                 <a href="http://www.amazon.com/Dance-Dragons-Song-Ice-Fire/product-reviews/0553582011?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                 <a href="http://www.amazon.com/Dance-Dragons-Song-Ice-Fire/product-reviews/0553582011?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                   <span class="auiTestSprite s_star_3_5 " title="3.7 out of 5 stars">
                    <span>
                     3.7 out of 5 stars
@@ -3741,7 +3741,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
                  </a>
                 </span>
                 (
-                <a href="http://www.amazon.com/Dance-Dragons-Song-Ice-Fire/product-reviews/0553582011?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                <a href="http://www.amazon.com/Dance-Dragons-Song-Ice-Fire/product-reviews/0553582011?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                  5,908
                 </a>
                 )
@@ -3785,7 +3785,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
               <span class="rating-stars">
                <span class="crAvgStars" style="white-space:no-wrap;">
                 <span class="asinReviewsSummary" name="0553381695">
-                 <a href="http://www.amazon.com/Clash-Kings-Song-Fire-Book/product-reviews/0553381695?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                 <a href="http://www.amazon.com/Clash-Kings-Song-Fire-Book/product-reviews/0553381695?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                   <span class="auiTestSprite s_star_4_5 " title="4.5 out of 5 stars">
                    <span>
                     4.5 out of 5 stars
@@ -3794,7 +3794,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
                  </a>
                 </span>
                 (
-                <a href="http://www.amazon.com/Clash-Kings-Song-Fire-Book/product-reviews/0553381695?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                <a href="http://www.amazon.com/Clash-Kings-Song-Fire-Book/product-reviews/0553381695?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                  2,426
                 </a>
                 )
@@ -3836,7 +3836,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
               <span class="rating-stars">
                <span class="crAvgStars" style="white-space:no-wrap;">
                 <span class="asinReviewsSummary" name="0062024035">
-                 <a href="http://www.amazon.com/Divergent-Veronica-Roth/product-reviews/0062024035?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                 <a href="http://www.amazon.com/Divergent-Veronica-Roth/product-reviews/0062024035?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                   <span class="auiTestSprite s_star_4_5 " title="4.6 out of 5 stars">
                    <span>
                     4.6 out of 5 stars
@@ -3845,7 +3845,7 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
                  </a>
                 </span>
                 (
-                <a href="http://www.amazon.com/Divergent-Veronica-Roth/product-reviews/0062024035?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+                <a href="http://www.amazon.com/Divergent-Veronica-Roth/product-reviews/0062024035?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
                  13,801
                 </a>
                 )
@@ -3878,13 +3878,13 @@ A Storm of Swords (A Song of Ice and Fire, Book 3) by George R.R. Martin [Mass M
          </a>
         </div>
        </div>
-       <div class="sims-data" data-baseasin="0553593714" data-devicetype="desktop" data-featureid="pd_sim" data-isaui="1" data-pageid="0553593714" data-pagerequestid="0B7VP81TE632882TDE1M" data-reftag="pd_sim_b" data-vt="0553593714" data-wdg="book_display_on_website" data-widgetname="purchase" id="purchaseSimsData" style="display:none">
+       <div class="sims-data" data-baseasin="0553593714" data-devicetype="desktop" data-featureid="pd_sim" data-isaui="1" data-pageid="0553593714" data-pagerequestid="1QGB5QCREWM230PVXY9G" data-reftag="pd_sim_b" data-vt="0553593714" data-wdg="book_display_on_website" data-widgetname="purchase" id="purchaseSimsData" style="display:none">
         0345535421,055357342X,055358202X,0553582011,0553381695,0062024035,0451210840,0553381709,0812511816,0812550706,0375826696,0957091907,0756404746,1594746036,0345391802,0812548051,0441627404,0545663261,1477849297,B008CLI4N4,B00CE1SYJW,1421527723,0142402516,0345535529,0307743659,0451524934,B00GXSJ5VI,0553582038,1451678193,1477849106,0385737955,054792822X,0062024043,B006872X3Q,006202406X,037584631X,0062059947,0307387895,0312536631,0439023521,1619633612,0545139708,0439023483,0545586178,0440246326,0064404994,0440212561,0876856830,014242207X,0439785960,1250007208,076536543X,038549081X,0142420891,0440180295,0385732554,0441172717,0553380958,B00CE1T086,0439023513,0451163966,0385738765,1476727651,0307588378,0618126988,0060850523,B00F3IKEJQ,0316769487,B00B1CAGVY,0446310786,0393312836,1439142017,0007536747,0156035219,074324754X,0515153656,014241493X,0440237688,0345453743,0525478817,0062278789,0061950726,014241543X,0307389731,0316055433
        </div>
       </div>
      </div>
     </div>
-    <div class="p13n-session" data-marketplaceid="ATVPDKIKX0DER" data-mkt="US" data-pageid="0553593714" data-requestid="0B7VP81TE632882TDE1M" data-session="000-0000000-0000000" style="display:none;">
+    <div class="p13n-session" data-marketplaceid="ATVPDKIKX0DER" data-mkt="US" data-pageid="0553593714" data-requestid="1QGB5QCREWM230PVXY9G" data-session="000-0000000-0000000" style="display:none;">
     </div>
     <script type="text/javascript">
      amznJQ.addLogical('p13nlogger', ["http://z-ecx.images-amazon.com/images/G/01/browser-scripts/p13nlogger/p13nlogger-3861958816._V1_.js"]);
@@ -4016,19 +4016,19 @@ div.fionaPublish div {
       <div class="feature" data-feature-name="heroQuickPromo" id="heroQuickPromo_feature_div">
        <div class="a-row a-spacing-medium a-size-small" id="hero-quick-promo">
         <div class="qpImage">
-         <a href="/b/ref=amb_link_407122182_1?ie=UTF8&amp;node=6323045011&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=hero-quick-promo&amp;pf_rd_r=0B7VP81TE632882TDE1M&amp;pf_rd_t=201&amp;pf_rd_p=1742641402&amp;pf_rd_i=0553593714">
-          <img align="left" alt="Big Spring Books" border="0" height="50" src="http://g-ecx.images-amazon.com/images/G/01/books/editorial/Big-Spring-Books-hqp._SL50_V343772974_.gif" width="50"/>
+         <a href="/b/ref=amb_link_411478562_1?ie=UTF8&amp;node=8994558011&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=hero-quick-promo&amp;pf_rd_r=1QGB5QCREWM230PVXY9G&amp;pf_rd_t=201&amp;pf_rd_p=1779575322&amp;pf_rd_i=0553593714">
+          <img align="left" alt="100 M&amp;T" border="0" height="40" src="http://g-ecx.images-amazon.com/images/G/01/editorial/100Mysteries._SL50_V337920465_.jpg" width="40"/>
          </a>
         </div>
         <span class="qpHeadline">
-         Editors' Picks in Spring Releases
+         100 Mysteries &amp; Thrillers to Read in a Lifetime
         </span>
         <br/>
-        Ready for some fresh reads? Browse our picks for
-        <a href="/b/ref=amb_link_407122182_3?ie=UTF8&amp;node=6323045011&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=hero-quick-promo&amp;pf_rd_r=0B7VP81TE632882TDE1M&amp;pf_rd_t=201&amp;pf_rd_p=1742641402&amp;pf_rd_i=0553593714">
-         Big Spring Books
+        Looking for something good to read? Browse our picks for
+        <a href="/b/ref=amb_link_411478562_3?ie=UTF8&amp;node=8994558011&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=hero-quick-promo&amp;pf_rd_r=1QGB5QCREWM230PVXY9G&amp;pf_rd_t=201&amp;pf_rd_p=1779575322&amp;pf_rd_i=0553593714">
+         100 Mysteries &amp; Thrillers to Read in a Lifetime
         </a>
-        to please all kinds of readers.
+        , brought to you by the Amazon Book Editors.
         <div style="clear:left">
         </div>
         <div class="a-hidden" id="heroQuickPromoDiv" name="heroQuickPromoDiv">
@@ -4204,7 +4204,7 @@ div.fionaPublish div {
            <b>
             Amazon Best Sellers Rank:
            </b>
-           #178 in Books (
+           #191 in Books (
            <a href="http://www.amazon.com/best-sellers-books-Amazon/zgbs/books">
             See Top 100 in Books
            </a>
@@ -4217,7 +4217,7 @@ div.fionaPublish div {
            <ul class="zg_hrsr">
             <li class="zg_hrsr_item">
              <span class="zg_hrsr_rank">
-              #4
+              #5
              </span>
              <span class="zg_hrsr_ladder">
               in
@@ -4242,7 +4242,7 @@ div.fionaPublish div {
             </li>
             <li class="zg_hrsr_item">
              <span class="zg_hrsr_rank">
-              #20
+              #22
              </span>
              <span class="zg_hrsr_ladder">
               in
@@ -4267,7 +4267,7 @@ div.fionaPublish div {
             </li>
             <li class="zg_hrsr_item">
              <span class="zg_hrsr_rank">
-              #33
+              #34
              </span>
              <span class="zg_hrsr_ladder">
               in
@@ -4698,7 +4698,7 @@ span.kar_beta {
        )
       </span>
       <div class="overallRank">
-       #5 Overall
+       #4 Overall
         (
        <a href="http://www.amazon.com/author-rank">
         See top 100 authors
@@ -4983,14 +4983,14 @@ span.kar_beta {
     <script language="JavaScript">
      <!--
 
-function ns_0B7VP81TE632882TDE1M_9079_playVideo (o, movieID, playerVersion){
-  if (document.getElementById('ns_0B7VP81TE632882TDE1M_9079_duration')) {
-    document.getElementById('ns_0B7VP81TE632882TDE1M_9079_duration').style.display='none';
+function ns_1QGB5QCREWM230PVXY9G_770_playVideo (o, movieID, playerVersion){
+  if (document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_duration')) {
+    document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_duration').style.display='none';
   }
 
-  if (document.getElementById('ns_0B7VP81TE632882TDE1M_9079_videoThumbs')){
+  if (document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_videoThumbs')){
 
-    var elements = document.getElementById('ns_0B7VP81TE632882TDE1M_9079_videoThumbs').getElementsByTagName('div');
+    var elements = document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_videoThumbs').getElementsByTagName('div');
     var j;
     for (j=0; j<elements.length; j++) {
       elements[j].style.backgroundColor = '#FFFFFF';
@@ -5000,7 +5000,7 @@ function ns_0B7VP81TE632882TDE1M_9079_playVideo (o, movieID, playerVersion){
   o.style.backgroundColor = '#E4E4E4';
   o.id = 'currVid';
   
-  ns_0B7VP81TE632882TDE1M_9079_loadSwf(movieID, playerVersion);
+  ns_1QGB5QCREWM230PVXY9G_770_loadSwf(movieID, playerVersion);
 }
 
 function thumbMouseOver(o) {
@@ -5034,28 +5034,28 @@ function thumbMouseOut(o) {
             <script language="JavaScript">
              <!--
 
-function ns_0B7VP81TE632882TDE1M_9079_playerMouseOver() {
-  if(document.getElementById('ns_0B7VP81TE632882TDE1M_9079_preplayImageId')){
-    document.getElementById('ns_0B7VP81TE632882TDE1M_9079_preplayImageId').src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-on._V192250112_.gif";
+function ns_1QGB5QCREWM230PVXY9G_770_playerMouseOver() {
+  if(document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_preplayImageId')){
+    document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_preplayImageId').src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-on._V192250112_.gif";
   }
 }
 
-function ns_0B7VP81TE632882TDE1M_9079_playerMouseOut() {
-  if(document.getElementById('ns_0B7VP81TE632882TDE1M_9079_preplayImageId')){
-    document.getElementById('ns_0B7VP81TE632882TDE1M_9079_preplayImageId').src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-off._V192250119_.gif";
+function ns_1QGB5QCREWM230PVXY9G_770_playerMouseOut() {
+  if(document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_preplayImageId')){
+    document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_preplayImageId').src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-off._V192250119_.gif";
   }
 }
 
 //-->
             </script>
-            <div align="center" class="flashPlayer" id="ns_0B7VP81TE632882TDE1M_9079_flashPlayerID">
+            <div align="center" class="flashPlayer" id="ns_1QGB5QCREWM230PVXY9G_770_flashPlayerID">
              <table cellpadding="0" cellspacing="0">
               <tr>
                <td align="center" valign="top">
                 <table cellpadding="0px" cellspacing="0px">
                  <tr>
                   <td valign="top">
-                   <div id="ns_0B7VP81TE632882TDE1M_9079_chiDiv" onmouseover="">
+                   <div id="ns_1QGB5QCREWM230PVXY9G_770_chiDiv" onmouseover="">
                    </div>
                    <script language="JavaScript">
                     <!--
@@ -5098,17 +5098,17 @@ function embeddingPopup(nsPrefix)
                    <script language="JavaScript">
                     <!--
 
-function ns_0B7VP81TE632882TDE1M_9079_embeddingPopup(){	
+function ns_1QGB5QCREWM230PVXY9G_770_embeddingPopup(){	
 alert("Embedding code will be displayed here.");
 }
 
 -->
                    </script>
-                   <div id="ns_0B7VP81TE632882TDE1M_9079_hiddenPre" style="display:none">
-                    <div id="ns_0B7VP81TE632882TDE1M_9079_videoPlaceholder" style="position:relative;">
-                     <div id="ns_0B7VP81TE632882TDE1M_9079_clipDiv" style="position:relative; overflow:visible; ">
-                      <div id="ns_0B7VP81TE632882TDE1M_9079_flashcontent">
-                       <div class="outercenterslate" onclick="return ns_0B7VP81TE632882TDE1M_9079_loadSwf('m3E9FHORY7HT4V','3');" onmouseout="ns_0B7VP81TE632882TDE1M_9079_playerMouseOut();" onmouseover="ns_0B7VP81TE632882TDE1M_9079_playerMouseOver();" style="width:320px;height:283px;">
+                   <div id="ns_1QGB5QCREWM230PVXY9G_770_hiddenPre" style="display:none">
+                    <div id="ns_1QGB5QCREWM230PVXY9G_770_videoPlaceholder" style="position:relative;">
+                     <div id="ns_1QGB5QCREWM230PVXY9G_770_clipDiv" style="position:relative; overflow:visible; ">
+                      <div id="ns_1QGB5QCREWM230PVXY9G_770_flashcontent">
+                       <div class="outercenterslate" onclick="return ns_1QGB5QCREWM230PVXY9G_770_loadSwf('m3E9FHORY7HT4V','3');" onmouseout="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOut();" onmouseover="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOver();" style="width:320px;height:283px;">
                         <div class="centerslate" style="width:320px;height:240px;">
                          <span>
                          </span>
@@ -5121,8 +5121,8 @@ alert("Embedding code will be displayed here.");
                          <div class="shuttleTextBottom">
                           Video
                          </div>
-                         <a class="slateLink" href="/gp/mpd/permalink/m3E9FHORY7HT4V" id="ns_0B7VP81TE632882TDE1M_9079_slateLink" onblur="ns_0B7VP81TE632882TDE1M_9079_playerMouseOut();" onfocus="ns_0B7VP81TE632882TDE1M_9079_playerMouseOver();" target="/gp/mpd/permalink/m3E9FHORY7HT4V">
-                          <img border="0" height="74" id="ns_0B7VP81TE632882TDE1M_9079_preplayImageId" src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-off._V192250119_.gif" style="position:absolute;left:130px;top:-31px;"/>
+                         <a class="slateLink" href="/gp/mpd/permalink/m3E9FHORY7HT4V" id="ns_1QGB5QCREWM230PVXY9G_770_slateLink" onblur="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOut();" onfocus="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOver();" target="/gp/mpd/permalink/m3E9FHORY7HT4V">
+                          <img border="0" height="74" id="ns_1QGB5QCREWM230PVXY9G_770_preplayImageId" src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-off._V192250119_.gif" style="position:absolute;left:130px;top:-31px;"/>
                          </a>
                         </div>
                        </div>
@@ -5132,7 +5132,7 @@ alert("Embedding code will be displayed here.");
                    </div>
                    <script type="text/javascript">
                     <!--
-function ns_0B7VP81TE632882TDE1M_9079_refresh_preplay() {
+function ns_1QGB5QCREWM230PVXY9G_770_refresh_preplay() {
   if (typeof amznJQ != "undefined") {
     amznJQ.addLogical('swfobjectJS', ["http://z-ecx.images-amazon.com/images/G/01/media/swf/amznjq-swfobject-1.5._V233081495_.js"]);
   } else {
@@ -5142,14 +5142,14 @@ function ns_0B7VP81TE632882TDE1M_9079_refresh_preplay() {
     document.getElementByTagName('head')[0].appendChild(swfObjectScript);
   }
 
-document.getElementById("ns_0B7VP81TE632882TDE1M_9079_chiDiv").innerHTML = document.getElementById("ns_0B7VP81TE632882TDE1M_9079_hiddenPre").innerHTML;
+document.getElementById("ns_1QGB5QCREWM230PVXY9G_770_chiDiv").innerHTML = document.getElementById("ns_1QGB5QCREWM230PVXY9G_770_hiddenPre").innerHTML;
 };
-ns_0B7VP81TE632882TDE1M_9079_refresh_preplay();
+ns_1QGB5QCREWM230PVXY9G_770_refresh_preplay();
 
 -->
                    </script>
                    <noscript>
-                    <div class="outercenterslate" onclick="return ns_0B7VP81TE632882TDE1M_9079_loadSwf('m3E9FHORY7HT4V','3');" onmouseout="ns_0B7VP81TE632882TDE1M_9079_playerMouseOut();" onmouseover="ns_0B7VP81TE632882TDE1M_9079_playerMouseOver();" style="width:320px;height:283px;">
+                    <div class="outercenterslate" onclick="return ns_1QGB5QCREWM230PVXY9G_770_loadSwf('m3E9FHORY7HT4V','3');" onmouseout="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOut();" onmouseover="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOver();" style="width:320px;height:283px;">
                      <div class="centerslate" style="width:320px;height:240px;">
                       <span>
                       </span>
@@ -5162,8 +5162,8 @@ ns_0B7VP81TE632882TDE1M_9079_refresh_preplay();
                       <div class="shuttleTextBottom">
                        Video
                       </div>
-                      <a class="slateLink" href="/gp/mpd/permalink/m3E9FHORY7HT4V" id="ns_0B7VP81TE632882TDE1M_9079_slateLink" onblur="ns_0B7VP81TE632882TDE1M_9079_playerMouseOut();" onfocus="ns_0B7VP81TE632882TDE1M_9079_playerMouseOver();" target="/gp/mpd/permalink/m3E9FHORY7HT4V">
-                       <img border="0" height="74" id="ns_0B7VP81TE632882TDE1M_9079_preplayImageId" src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-off._V192250119_.gif" style="position:absolute;left:130px;top:-31px;"/>
+                      <a class="slateLink" href="/gp/mpd/permalink/m3E9FHORY7HT4V" id="ns_1QGB5QCREWM230PVXY9G_770_slateLink" onblur="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOut();" onfocus="ns_1QGB5QCREWM230PVXY9G_770_playerMouseOver();" target="/gp/mpd/permalink/m3E9FHORY7HT4V">
+                       <img border="0" height="74" id="ns_1QGB5QCREWM230PVXY9G_770_preplayImageId" src="http://g-ecx.images-amazon.com/images/G/01/x-locale/communities/customerimage/play-shuttle-off._V192250119_.gif" style="position:absolute;left:130px;top:-31px;"/>
                       </a>
                      </div>
                     </div>
@@ -5174,25 +5174,25 @@ ns_0B7VP81TE632882TDE1M_9079_refresh_preplay();
                 <script type="text/javascript">
                  // <![CDATA[
 
-var ns_0B7VP81TE632882TDE1M_9079_so;	   
+var ns_1QGB5QCREWM230PVXY9G_770_so;	   
 
 
-function ns_0B7VP81TE632882TDE1M_9079_loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
+function ns_1QGB5QCREWM230PVXY9G_770_loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes) {
 
   try {
-      ns_0B7VP81TE632882TDE1M_9079_so = new SWFObject(swfLocation, "ns_0B7VP81TE632882TDE1M_9079_AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
+      ns_1QGB5QCREWM230PVXY9G_770_so = new SWFObject(swfLocation, "ns_1QGB5QCREWM230PVXY9G_770_AMPlayerProd", swfWidth, swfHeight, flashVersion, bgColor);	   
 
       for (var v in swfParams) {
-        ns_0B7VP81TE632882TDE1M_9079_so.addVariable(v, encodeURIComponent(swfParams[v]));
+        ns_1QGB5QCREWM230PVXY9G_770_so.addVariable(v, encodeURIComponent(swfParams[v]));
       }
       for (var v in flashParams) {
-        ns_0B7VP81TE632882TDE1M_9079_so.addParam(v, flashParams[v]);
+        ns_1QGB5QCREWM230PVXY9G_770_so.addParam(v, flashParams[v]);
       }
       for (var v in embedAttributes) {
-        ns_0B7VP81TE632882TDE1M_9079_so.setAttribute(v, embedAttributes[v]);
+        ns_1QGB5QCREWM230PVXY9G_770_so.setAttribute(v, embedAttributes[v]);
       }
 
-      ns_0B7VP81TE632882TDE1M_9079_so.addVariable("swfEmbedTime", new Date().getTime());
+      ns_1QGB5QCREWM230PVXY9G_770_so.addVariable("swfEmbedTime", new Date().getTime());
 
       var agt = navigator.userAgent;
        
@@ -5205,31 +5205,31 @@ function ns_0B7VP81TE632882TDE1M_9079_loadSwf_Core(swfLocation, swfWidth, swfHei
       }
       var minorVersion = parseFloat(navigator.ap);
       if ((navigator.appVersion.indexOf("Mac")!=-1) || (ffVersion < 1.5)) {
-          ns_0B7VP81TE632882TDE1M_9079_so.setAttribute("height", swfHeight);
-          ns_0B7VP81TE632882TDE1M_9079_so.setAttribute("width", swfWidth);
-          ns_0B7VP81TE632882TDE1M_9079_so.addVariable("oldFirefox", "1");	     
+          ns_1QGB5QCREWM230PVXY9G_770_so.setAttribute("height", swfHeight);
+          ns_1QGB5QCREWM230PVXY9G_770_so.setAttribute("width", swfWidth);
+          ns_1QGB5QCREWM230PVXY9G_770_so.addVariable("oldFirefox", "1");	     
       }
 
-      if (ns_0B7VP81TE632882TDE1M_9079_so.write("ns_0B7VP81TE632882TDE1M_9079_flashcontent")) {
-          fp_resizePlayerSpace('ns_0B7VP81TE632882TDE1M_9079_', 
+      if (ns_1QGB5QCREWM230PVXY9G_770_so.write("ns_1QGB5QCREWM230PVXY9G_770_flashcontent")) {
+          fp_resizePlayerSpace('ns_1QGB5QCREWM230PVXY9G_770_', 
                                320, 
                                283);
       }
       else {
-          var nsPrefix = 'ns_0B7VP81TE632882TDE1M_9079_';
+          var nsPrefix = 'ns_1QGB5QCREWM230PVXY9G_770_';
 
           fp_resizePlayerSpace(nsPrefix, 0, 0);
           fp_rewriteDiv(nsPrefix, "flashcontent", '<br/>To view this video download <a target="_blank" href="http://www.macromedia.com/go/getflashplayer" target="_top">Flash Player</a> (version 9.0.115 or higher)');
       }
   } catch(err) {
-      fp_resizePlayerSpace('ns_0B7VP81TE632882TDE1M_9079_', 0, 0);
+      fp_resizePlayerSpace('ns_1QGB5QCREWM230PVXY9G_770_', 0, 0);
   }
   return false;
 }
 
 
 
-function _ns_0B7VP81TE632882TDE1M_9079_loadSwf(movieID, playerVersion) {
+function _ns_1QGB5QCREWM230PVXY9G_770_loadSwf(movieID, playerVersion) {
     var swfLocation = "http://g-ecx.images-amazon.com/images/G/01/am3/20120510035744301/AMPlayer._V148501545_.swf";
     var swfWidth = "320";
     var swfHeight = "100%";
@@ -5241,7 +5241,7 @@ function _ns_0B7VP81TE632882TDE1M_9079_loadSwf(movieID, playerVersion) {
     var embedAttributes = {};
     swfParams.amazonPort = "80";
     swfParams.allowFullScreen = "true";
-    swfParams.nsPrefix = "ns_0B7VP81TE632882TDE1M_9079_";
+    swfParams.nsPrefix = "ns_1QGB5QCREWM230PVXY9G_770_";
     swfParams.locale = "en_US";
     swfParams.logUrl = "gp/mpd/l";
     swfParams.canResize = "1";
@@ -5280,20 +5280,20 @@ function _ns_0B7VP81TE632882TDE1M_9079_loadSwf(movieID, playerVersion) {
       swfParams.autoPlay = "1";
     }
 
-    if (document.getElementById('ns_0B7VP81TE632882TDE1M_9079_duration')) {
-      document.getElementById('ns_0B7VP81TE632882TDE1M_9079_duration').style.display='none';
+    if (document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_duration')) {
+      document.getElementById('ns_1QGB5QCREWM230PVXY9G_770_duration').style.display='none';
     }
-    ns_0B7VP81TE632882TDE1M_9079_loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
+    ns_1QGB5QCREWM230PVXY9G_770_loadSwf_Core(swfLocation, swfWidth, swfHeight, flashVersion, bgColor, swfParams, flashParams, embedAttributes);
 
   return false;
 }
 
-function ns_0B7VP81TE632882TDE1M_9079_loadSwf(movieID, playerVersion) {
+function ns_1QGB5QCREWM230PVXY9G_770_loadSwf(movieID, playerVersion) {
 if (typeof amznJQ != "undefined") {
-   amznJQ.available('swfobjectJS', function() { _ns_0B7VP81TE632882TDE1M_9079_loadSwf(movieID, playerVersion); });
+   amznJQ.available('swfobjectJS', function() { _ns_1QGB5QCREWM230PVXY9G_770_loadSwf(movieID, playerVersion); });
    return false;
 } else {
-   return _ns_0B7VP81TE632882TDE1M_9079_loadSwf(movieID, playerVersion);
+   return _ns_1QGB5QCREWM230PVXY9G_770_loadSwf(movieID, playerVersion);
 }
 }
 
@@ -5304,19 +5304,19 @@ if (typeof amznJQ != "undefined") {
                 <script language="JavaScript">
                  <!--
 
-function ns_0B7VP81TE632882TDE1M_9079_newHeight(h)
+function ns_1QGB5QCREWM230PVXY9G_770_newHeight(h)
 {	
-    fp_resizePlayerSpace('ns_0B7VP81TE632882TDE1M_9079_', 0, h);
+    fp_resizePlayerSpace('ns_1QGB5QCREWM230PVXY9G_770_', 0, h);
 }
 
-function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
-  ns_0B7VP81TE632882TDE1M_9079_newHeight(h);
+function ns_1QGB5QCREWM230PVXY9G_770_resetPlayer(w,h,bw,cc) {
+  ns_1QGB5QCREWM230PVXY9G_770_newHeight(h);
 
-  ns_0B7VP81TE632882TDE1M_9079_so.addVariable("resetBandwidth", bw);
-  ns_0B7VP81TE632882TDE1M_9079_so.addVariable("cacheCode", cc);
-  ns_0B7VP81TE632882TDE1M_9079_so.setAttribute("height", h);
-  ns_0B7VP81TE632882TDE1M_9079_so.setAttribute("width", w);
-  ns_0B7VP81TE632882TDE1M_9079_so.write("ns_0B7VP81TE632882TDE1M_9079_flashcontent");
+  ns_1QGB5QCREWM230PVXY9G_770_so.addVariable("resetBandwidth", bw);
+  ns_1QGB5QCREWM230PVXY9G_770_so.addVariable("cacheCode", cc);
+  ns_1QGB5QCREWM230PVXY9G_770_so.setAttribute("height", h);
+  ns_1QGB5QCREWM230PVXY9G_770_so.setAttribute("width", w);
+  ns_1QGB5QCREWM230PVXY9G_770_so.write("ns_1QGB5QCREWM230PVXY9G_770_flashcontent");
 }
 
 -->
@@ -5326,15 +5326,15 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
              </table>
             </div>
            </td>
-           <td height="283" id="ns_0B7VP81TE632882TDE1M_9079_thumbCell" style="padding-left:10px;" valign="center" width="300">
+           <td height="283" id="ns_1QGB5QCREWM230PVXY9G_770_thumbCell" style="padding-left:10px;" valign="center" width="300">
             <div style="height:283px; width:100%; overflow:auto; padding-right:3px;">
-             <table cellpadding="0" cellspacing="0" id="ns_0B7VP81TE632882TDE1M_9079_videoThumbs" width="100%">
+             <table cellpadding="0" cellspacing="0" id="ns_1QGB5QCREWM230PVXY9G_770_videoThumbs" width="100%">
               <tr>
                <td style="
 		    padding:5px 0px 5px 0px; font-family: verdana,arial,helvetica,sans-serif; font-size: 10px;
 		   border-bottom:1px dashed #999999;">
                 <a href="/gp/mpd/permalink/m3E9FHORY7HT4V">
-                 <div id="currVid" onclick="ns_0B7VP81TE632882TDE1M_9079_playVideo(this, 'm3E9FHORY7HT4V', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
+                 <div id="currVid" onclick="ns_1QGB5QCREWM230PVXY9G_770_playVideo(this, 'm3E9FHORY7HT4V', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
 		    cursor:pointer; color:#000000; height:50px; padding:3px 5px 5px 5px;
 		    background:#E4E4E4">
                   <img border="0" src="http://g-ecx.images-amazon.com/images/I/91vGXyqNTZL._SX67_CR0,0,67,65_CR0,0,0,0_PImini-play-shuttle,BottomLeft,0,3_.png" style="float:left; margin-right:10px;"/>
@@ -5352,7 +5352,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
 		    padding:5px 0px 5px 0px; font-family: verdana,arial,helvetica,sans-serif; font-size: 10px;
 		   border-bottom:1px dashed #999999;">
                 <a href="/gp/mpd/permalink/m1XD8WA9V85GN">
-                 <div onclick="ns_0B7VP81TE632882TDE1M_9079_playVideo(this, 'm1XD8WA9V85GN', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
+                 <div onclick="ns_1QGB5QCREWM230PVXY9G_770_playVideo(this, 'm1XD8WA9V85GN', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
 		    cursor:pointer; color:#000000; height:50px; padding:3px 5px 5px 5px;
 		   ">
                   <img border="0" src="http://g-ecx.images-amazon.com/images/I/81vPSoe8KYL._SX67_CR0,0,67,65_CR0,0,0,0_PImini-play-shuttle,BottomLeft,0,3_.png" style="float:left; margin-right:10px;"/>
@@ -5370,7 +5370,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
 		    padding:5px 0px 5px 0px; font-family: verdana,arial,helvetica,sans-serif; font-size: 10px;
 		   border-bottom:1px dashed #999999;">
                 <a href="/gp/mpd/permalink/m3J3YYWLYPS9SE">
-                 <div onclick="ns_0B7VP81TE632882TDE1M_9079_playVideo(this, 'm3J3YYWLYPS9SE', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
+                 <div onclick="ns_1QGB5QCREWM230PVXY9G_770_playVideo(this, 'm3J3YYWLYPS9SE', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
 		    cursor:pointer; color:#000000; height:50px; padding:3px 5px 5px 5px;
 		   ">
                   <img border="0" src="http://g-ecx.images-amazon.com/images/I/814jUv0avdL._SX67_CR0,0,67,65_CR0,0,0,0_PImini-play-shuttle,BottomLeft,0,3_.png" style="float:left; margin-right:10px;"/>
@@ -5388,7 +5388,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
 		    padding:5px 0px 5px 0px; font-family: verdana,arial,helvetica,sans-serif; font-size: 10px;
 		   border-bottom:1px dashed #999999;">
                 <a href="/gp/mpd/permalink/m37VQ2C85G1B3D">
-                 <div onclick="ns_0B7VP81TE632882TDE1M_9079_playVideo(this, 'm37VQ2C85G1B3D', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
+                 <div onclick="ns_1QGB5QCREWM230PVXY9G_770_playVideo(this, 'm37VQ2C85G1B3D', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
 		    cursor:pointer; color:#000000; height:50px; padding:3px 5px 5px 5px;
 		   ">
                   <img border="0" src="http://g-ecx.images-amazon.com/images/I/71Vi61qhZtL._SX67_CR0,0,67,65_CR0,0,0,0_PImini-play-shuttle,BottomLeft,0,3_.png" style="float:left; margin-right:10px;"/>
@@ -5406,7 +5406,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
 		    padding:5px 0px 5px 0px; font-family: verdana,arial,helvetica,sans-serif; font-size: 10px;
 		  ">
                 <a href="/gp/mpd/permalink/m38P2HIMWMJQ9K">
-                 <div onclick="ns_0B7VP81TE632882TDE1M_9079_playVideo(this, 'm38P2HIMWMJQ9K', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
+                 <div onclick="ns_1QGB5QCREWM230PVXY9G_770_playVideo(this, 'm38P2HIMWMJQ9K', '3'); return false;" onmouseout="thumbMouseOut(this);" onmouseover="thumbMouseOver(this);" style="
 		    cursor:pointer; color:#000000; height:50px; padding:3px 5px 5px 5px;
 		   ">
                   <img border="0" src="http://g-ecx.images-amazon.com/images/I/819ZAa9VnuL._SX67_CR0,0,67,65_CR0,0,0,0_PImini-play-shuttle,BottomLeft,0,3_.png" style="float:left; margin-right:10px;"/>
@@ -5438,7 +5438,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
      </div>
     </div>
     <form name="videoValues">
-     <input name="ns_0B7VP81TE632882TDE1M_9079_hiddenSlate" type="hidden" value="http://ecx.images-amazon.com/images/I/91vGXyqNTZL._SX320_SY240_CR0,0,0,0_.png"/>
+     <input name="ns_1QGB5QCREWM230PVXY9G_770_hiddenSlate" type="hidden" value="http://ecx.images-amazon.com/images/I/91vGXyqNTZL._SX320_SY240_CR0,0,0,0_.png"/>
     </form>
     <br clear="all"/>
     <div class="a-divider a-divider-section" id="revDivider">
@@ -6062,7 +6062,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
       <div class="a-column a-span4 a-span-last" id="revMRLContainer">
        <div class="a-section" id="ADPlaceholder">
         <script type="text/javascript">
-         var paCusRevAllURL = "http://product-ads-portal.amazon.com/gp/synd/?asin=0553593714&pAsin=&gl=14&sq=&sa=&se=&noo=&pt=Detail&spt=Glance&sn=customer-reviews-top&pRID=0B7VP81TE632882TDE1M&ts=1398315318&h=15BE9222D61EB55936892ED524A30677E24EDC77";
+         var paCusRevAllURL = "http://product-ads-portal.amazon.com/gp/synd/?asin=0553593714&pAsin=&gl=14&sq=&sa=&se=&noo=&pt=Detail&spt=Glance&sn=customer-reviews-top&pRID=1QGB5QCREWM230PVXY9G&ts=1398311673&h=5C3CEB053145B6337F73281151D663DF0457A94D";
         </script>
        </div>
        <style>
@@ -6090,7 +6090,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
          <div class="a-fixed-right-grid">
           <div class="a-fixed-right-grid-inner" style="padding-right:100px">
            <div class="a-fixed-right-grid-col a-col-right" style="width:100px;margin-right:-100px;float:left;">
-            <a class="a-touch-link a-box a-color-base add-product-image" href="/gp/customer-media/upload/0553593714?ie=UTF8&amp;rnd=1398315318">
+            <a class="a-touch-link a-box a-color-base add-product-image" href="/gp/customer-media/upload/0553593714?ie=UTF8&amp;rnd=1398311673">
              <div class="a-box-inner">
               <i class="a-icon a-icon-touch-link">
               </i>
@@ -6132,7 +6132,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
            </span>
           </p>
           <span class="a-size-small a-color-success">
-           Published 2 hours ago by Lisa R
+           Published 1 hour ago by Lisa R
           </span>
          </a>
         </div>
@@ -6162,7 +6162,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
            </span>
           </p>
           <span class="a-size-small a-color-success">
-           Published 5 hours ago by Jill Marie Veteri
+           Published 4 hours ago by Jill Marie Veteri
           </span>
          </a>
         </div>
@@ -6192,7 +6192,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
            </span>
           </p>
           <span class="a-size-small a-color-success">
-           Published 11 hours ago by Rachel Lytle
+           Published 10 hours ago by Rachel Lytle
           </span>
          </a>
         </div>
@@ -6217,7 +6217,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
            </span>
           </p>
           <span class="a-size-small a-color-success">
-           Published 12 hours ago by Kindle Customer
+           Published 11 hours ago by Kindle Customer
           </span>
          </a>
         </div>
@@ -6242,7 +6242,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
            </span>
           </p>
           <span class="a-size-small a-color-success">
-           Published 15 hours ago by Amazon Customer
+           Published 14 hours ago by Amazon Customer
           </span>
          </a>
         </div>
@@ -6278,7 +6278,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
            </span>
           </p>
           <span class="a-size-small a-color-success">
-           Published 15 hours ago by Vera Fernandes
+           Published 14 hours ago by Vera Fernandes
           </span>
          </a>
         </div>
@@ -6303,7 +6303,7 @@ function ns_0B7VP81TE632882TDE1M_9079_resetPlayer(w,h,bw,cc) {
            </span>
           </p>
           <span class="a-size-small a-color-success">
-           Published 18 hours ago by Jason
+           Published 17 hours ago by Jason
           </span>
          </a>
         </div>
@@ -8055,7 +8055,7 @@ if (typeof(loadState) != "undefined" && !loadState) {
     </div>
   <# } #>
      </script>
-     ARRAY(0xa5b2ed14)
+     ARRAY(0xa621ac9c)
     </div>
     <script type="text/javascript">
      window.$Nav && $Nav.declare('config.prefetchUrls', ["http://z-ecx.images-amazon.com/images/G/01/browser-scripts/cartWithAjaxJS/cartWithAjaxJS-2546324816._V1_.js","http://z-ecx.images-amazon.com/images/G/01/browser-scripts/tmpMasterDPMergedCSS-US/tmpMasterDPMergedCSS-US-9624502664._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/authportal/common/images/amazon_logo_no-org_mid._V153387053_.png","https://images-na.ssl-images-amazon.com/images/G/01/authportal/common/images/amznbtn-sprite03._V395592492_.png","https://images-na.ssl-images-amazon.com/images/G/01/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.0._V393733149_.js","https://images-na.ssl-images-amazon.com/images/G/01/authportal/flex/reduced-nav/ap-flex-reduced-nav-2.1._V343920894_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/navbarCSS-global/navbarCSS-global-min-1689515832._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/navbarJS-global/navbarJS-global-min-765543837._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/site-wide-js-1.2.6-beacon/site-wide-4399035284._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/us-site-wide-css-beacon/site-wide-6800426958._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-1968712395._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-homepage-beaconized/wcs-ya-homepage-beaconized-3515399030._V1_.js","https://images-na.ssl-images-amazon.com/images/G/01/browser-scripts/wcs-ya-order-history-beaconized/wcs-ya-order-history-beaconized-1154085490._V1_.css","https://images-na.ssl-images-amazon.com/images/G/01/gno/beacon/BeaconSprite-US-01-fw._V355247711_.png","https://images-na.ssl-images-amazon.com/images/G/01/gno/images/general/navAmazonLogoFooter._V169459313_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/buttons/sign-in-secure._V192194766_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/login/fwcim._V342128453_.js","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel._V386942464_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/communities/social/snwicons_v2._V369764580_.png","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/css/images/amznbtn-sprite03._V387356454_.png","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/help/images/spotlight/kindle-family-02b._V354814520_.jpg","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/orders/images/acorn._V192250692_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/orders/images/amazon-gc-100._V192250695_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/orders/images/amazon-gcs-100._V192250695_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/orders/images/btn-close._V192250694_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/projects/text-trace/texttrace_typ._V353754787_.js","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/new-link._V192250664_.gif","https://images-na.ssl-images-amazon.com/images/G/01/x-locale/cs/ya/images/shipment_large_lt._V192250661_.gif"]);
@@ -8953,7 +8953,7 @@ text-decoration:none !important;
          <span class="rating-stars">
           <span class="crAvgStars" style="white-space:no-wrap;">
            <span class="asinReviewsSummary" name="0345535529">
-            <a href="http://www.amazon.com/George-Martins-Thrones-5-Book-Boxed/product-reviews/0345535529?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+            <a href="http://www.amazon.com/George-Martins-Thrones-5-Book-Boxed/product-reviews/0345535529?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
              <span class="swSprite s_star_4_5 " title="4.5 out of 5 stars">
               <span>
                4.5 out of 5 stars
@@ -8962,7 +8962,7 @@ text-decoration:none !important;
             </a>
            </span>
            (
-           <a href="http://www.amazon.com/George-Martins-Thrones-5-Book-Boxed/product-reviews/0345535529?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+           <a href="http://www.amazon.com/George-Martins-Thrones-5-Book-Boxed/product-reviews/0345535529?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
             1,560
            </a>
            )
@@ -8994,7 +8994,7 @@ text-decoration:none !important;
          <span class="rating-stars">
           <span class="crAvgStars" style="white-space:no-wrap;">
            <span class="asinReviewsSummary" name="0345535421">
-            <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+            <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
              <span class="swSprite s_star_4_5 " title="4.5 out of 5 stars">
               <span>
                4.5 out of 5 stars
@@ -9003,7 +9003,7 @@ text-decoration:none !important;
             </a>
            </span>
            (
-           <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+           <a href="http://www.amazon.com/Clash-Kings-HBO-Tie-Edition/product-reviews/0345535421?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
             2,426
            </a>
            )
@@ -9035,7 +9035,7 @@ text-decoration:none !important;
          <span class="rating-stars">
           <span class="crAvgStars" style="white-space:no-wrap;">
            <span class="asinReviewsSummary" name="B00C8CQTJY">
-            <a href="http://www.amazon.com/Game-Thrones-Season-Blu-ray-Digital/product-reviews/B00C8CQTJY?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+            <a href="http://www.amazon.com/Game-Thrones-Season-Blu-ray-Digital/product-reviews/B00C8CQTJY?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
              <span class="swSprite s_star_4_5 " title="4.7 out of 5 stars">
               <span>
                4.7 out of 5 stars
@@ -9044,7 +9044,7 @@ text-decoration:none !important;
             </a>
            </span>
            (
-           <a href="http://www.amazon.com/Game-Thrones-Season-Blu-ray-Digital/product-reviews/B00C8CQTJY?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+           <a href="http://www.amazon.com/Game-Thrones-Season-Blu-ray-Digital/product-reviews/B00C8CQTJY?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
             1,376
            </a>
            )
@@ -9073,7 +9073,7 @@ text-decoration:none !important;
          <span class="rating-stars">
           <span class="crAvgStars" style="white-space:no-wrap;">
            <span class="asinReviewsSummary" name="B007BVOEPI">
-            <a href="http://www.amazon.com/Game-of-Thrones-Season-1/product-reviews/B007BVOEPI?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
+            <a href="http://www.amazon.com/Game-of-Thrones-Season-1/product-reviews/B007BVOEPI?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
              <span class="swSprite s_star_4_5 " title="4.6 out of 5 stars">
               <span>
                4.6 out of 5 stars
@@ -9082,8 +9082,8 @@ text-decoration:none !important;
             </a>
            </span>
            (
-           <a href="http://www.amazon.com/Game-of-Thrones-Season-1/product-reviews/B007BVOEPI?ie=UTF8&amp;refRID=0B7VP81TE632882TDE1M">
-            3,140
+           <a href="http://www.amazon.com/Game-of-Thrones-Season-1/product-reviews/B007BVOEPI?ie=UTF8&amp;refRID=1QGB5QCREWM230PVXY9G">
+            3,141
            </a>
            )
           </span>
@@ -9807,11 +9807,11 @@ text-decoration:none !important;
             A.preload('http://z-ecx.images-amazon.com/images/G/01/browser-scripts/us-site-wide-css-beacon/site-wide-6800426958._V1_.css');  
         });
     </script>
-    <!-- whfh-0IX6fot2+Yz0XIYfh2hn4JuVoWQAFI/pD78uaQOUR7yiy0mNnlwr9fSwDmPvCn14 rid-0B7VP81TE632882TDE1M -->
+    <!-- whfh-YJArgMBp/fISrh2crc22XPRXcuXU5kIXqAk4lF9US2XJV2k1BNh0giypR0dWs/ka rid-1QGB5QCREWM230PVXY9G -->
     <div id="sis_pixel_r2" style="height:1px;">
     </div>
     <script>
-     (function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//s.amazon-adsystem.com/iu3?d=amazon.com&slot=navFooter&a2=0101a1823ca3d5d46ce03d4502edf28f095b20f780c29eddcddebefb2933fa9c1e98&old_oo=0&cb=1398315318104" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});
+     (function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//s.amazon-adsystem.com/iu3?d=amazon.com&slot=navFooter&a2=0101a1823ca3d5d46ce03d4502edf28f095b20f780c29eddcddebefb2933fa9c1e98&old_oo=0&cb=1398311673522" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>')},300)});
     </script>
     <script type="text/javascript">
      <!--
