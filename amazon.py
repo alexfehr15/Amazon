@@ -1,7 +1,17 @@
 #!/usr/bin/env python
 
 """
-Amazon Assignment
+    amz_main.py
+    April 23, 2014
+    Alex Fehr
+    Doug Wussler
+
+    This has the code needed to parse a URL and persist the parsed book data.
+    The "main" routine calls persist() and passes it parsed book data
+    that has been converted to a JSON dictionary.
+    persist() will add the book to the database.  It does not
+    check to see if the book is already in the database so
+    duplicate entries are possible.
 """
 
 import argparse
@@ -11,6 +21,72 @@ from lxml import etree
 import re
 import json
 import os
+
+from sqlalchemy import Column, Float, ForeignKey, Integer, \
+    Table, Unicode, UnicodeText
+from sqlalchemy.orm import relationship, backref, sessionmaker, joinedload
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine
+
+# Create object mappings to database tables
+Base = declarative_base()
+
+Books_authors_link = Table('books_authors_link', Base.metadata,
+                           Column('book_id', Integer,
+                                  ForeignKey('books.bid')),
+                           Column('author_id', Integer,
+                                  ForeignKey('authors.aid')))
+
+
+class Books(Base):
+    __tablename__ = 'books'
+    bid = Column(Integer, primary_key=True)
+    title = Column(Unicode)
+    authors = relationship('Authors',
+                           secondary=Books_authors_link)
+    price_new = Column(Float)
+    price_rent = Column(Float)
+    details = Column(UnicodeText)
+    reviews = relationship('Reviews')
+
+
+class Authors(Base):
+    __tablename__ = 'authors'
+    aid = Column(Integer, primary_key=True)
+    name = Column(Unicode)
+    books = relationship('Books',
+                         secondary=Books_authors_link)
+
+
+class Reviews(Base):
+    __tablename__ = 'reviews'
+    rid = Column(Integer, primary_key=True)
+    book_id = Column(Integer, ForeignKey('books.bid'))
+    review = Column(UnicodeText)
+
+
+def persist(jbook, view=False):
+    engine = create_engine('sqlite:///Amazon.sqlite', echo=False)
+    Base.metadata.create_all(engine)
+    session = sessionmaker(bind=engine)()
+    b = json.loads(jbook)
+    new = Books(title=b['title'],
+                price_new=b['price_new'],
+                price_rent=b['price_rent'],
+                authors=[Authors(name=a) for a in b['authors']],
+                details=("~!^\n").join(b['details']),
+                reviews=[Reviews(review=r) for r in b['reviews']])
+    session.add(new)
+    session.commit()
+    """
+    if view:
+        for b in session.query(Books).options(joinedload(Books.authors)).all():
+            print(b.title, b.price_new, b.price_rent, "\n" +
+                  (", ").join([a.name for a in b.authors]), "\n" +
+                  ("\n").join(b.details.split("~!^\n")), "\n" +
+                  ("\n\n").join([r.review for r in b.reviews]))
+    """
+    return True  # This serves no purpose at the moment
 
 class Amazon():
 
@@ -42,46 +118,6 @@ class Amazon():
 
 		return self.__file
 
-	@property
-	def name(self):
-		"""
-		Getter for the name of the book
-		"""
-
-		return self.__name
-
-	@property
-	def authors(self):
-		"""
-		Getter for the author(s) of the book
-		"""
-
-		return self.__authors
-
-	@property
-	def price(self):
-		"""
-		Getter for the price of the book
-		"""
-
-		return self.__price
-
-	@property
-	def details(self):
-		"""
-		Getter for the product details of the book
-		"""
-
-		return self.__details
-
-	@property
-	def reviews(self):
-		"""
-		Getter for the most helpful customer reviews of the book
-		"""
-
-		return self.__reviews
-
 	@url.setter
 	def url(self, url):
 		"""
@@ -97,53 +133,6 @@ class Amazon():
 		"""
 
 		self.__file = filename
-
-	@name.setter
-	def name(self, name):
-		"""
-		Getter for the name of the book
-		"""
-
-		self.__name = name
-
-	@authors.setter
-	def authors(self, authors):
-		"""
-		Getter for the author(s) of the book
-		"""
-
-		self.__authors = authors
-
-	@price.setter
-	def price(self, price):
-		"""
-		Getter for the price of the book
-		"""
-
-		self.__price = price
-
-	@details.setter
-	def details(self, details):
-		"""
-		Getter for the product details of the book
-		"""
-
-		self.__details = details
-
-	@reviews.setter
-	def reviews(self, reviews):
-		"""
-		Getter for the most helpful customer reviews of the book
-		"""
-
-		self.__reviews = reviews
-
-	def parse_file(self):
-		"""
-		Parse local html files
-		"""
-
-		pass
 
 	def parse_url(self):
 		"""
@@ -486,16 +475,19 @@ def remove_html_tags(data):
 	return p.sub('', data)
 
 def parse_command_line():
-	"""
-	Parses the command line arguments and returns them
-	"""
+    """
+    Parses the command line arguments and returns them
+    """
 
-	parser = argparse.ArgumentParser()
-	group = parser.add_mutually_exclusive_group(required=True)
-	group.add_argument("-d", type=str, help="directory containing html files to parse")
-	group.add_argument("-u", type=str, help="url for specified web page")
-	parser.add_argument("-o", choices=["html", "xml", "csv"], help="output format")
-	return parser.parse_args()
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("-d", type=str,
+                       help="directory containing html files to parse")
+    group.add_argument("-u", type=str,
+                       help="url for specified web page")
+    parser.add_argument("-o", choices=["html", "xml", "csv"],
+                        help="output format")
+    return parser.parse_args()
 
 if __name__ == "__main__":
 	#parse command line arguments
@@ -515,6 +507,9 @@ if __name__ == "__main__":
 
 	#call parsing function and storing json object
 	if args.d:
-		JSON = obj.parse_file()
+		JSON_book = obj.parse_file()
+		for x in JSON_book:
+			result = persist(x, True)
 	elif args.u:
-		JSON = obj.parse_url()
+		JSON_book = obj.parse_url()
+		result = persist(JSON_book, True)
