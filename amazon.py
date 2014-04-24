@@ -78,6 +78,7 @@ def persist(jbook, view=False):
                 reviews=[Reviews(review=r) for r in b['reviews']])
     session.add(new)
     session.commit()
+    #commented this out because kept giving errors
     """
     if view:
         for b in session.query(Books).options(joinedload(Books.authors)).all():
@@ -238,8 +239,12 @@ class Amazon():
 		for item in tag.find_all("li"):
 			#everything besides avg customer reviews and amazon best sellers rank
 			if str(item.b.string).strip() != "Average Customer Review:" and str(item.b.string).strip() != "Amazon Best Sellers Rank:":
-				D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
-				print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+				if "Shipping Weight" in str(item.b.string).strip():
+					D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip().replace("(", ""))
+					print(str(item.b.string).strip() + " " + str(item.contents[1]).strip().replace("(", ""))
+				else:
+					D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+					print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
 			#average customer review
 			elif str(item.b.string).strip() == "Average Customer Review:":
 				#get number of stars
@@ -259,8 +264,8 @@ class Amazon():
 				reg = re.compile("#([0-9]|,)*")
 				reg = reg.search(str(item))
 				if str(type(reg)) != "<class 'NoneType'>":
-					D.append(reg.group())
-					print(reg.group())
+					D.append(reg.group() + "in Books")
+					print(reg.group() + "in Books")
 				for thing in item.find_all("a"):
 					D.append(thing.string)
 					print(thing.string)
@@ -289,7 +294,6 @@ class Amazon():
 		#TESTING
 		JSO = json.dumps(J)
 		#JSO = json.loads(JSO)
-		f.write(str(type(JSO)))
 		f.write(str(JSO))
 
 		#TESTING
@@ -407,8 +411,13 @@ class Amazon():
 				for item in tag.find_all("li"):
 					#everything besides avg customer reviews and amazon best sellers rank
 					if str(item.b.string).strip() != "Average Customer Review:" and str(item.b.string).strip() != "Amazon Best Sellers Rank:":
-						D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
-						print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+						if "Shipping Weight" in str(item.b.string).strip():
+							D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip().replace("(", ""))
+							print(str(item.b.string).strip() + " " + str(item.contents[1]).strip().replace("(", ""))
+						else:
+							if str(item.b.string).strip() not in D:
+								D.append(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+								print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
 					#average customer review
 					elif str(item.b.string).strip() == "Average Customer Review:":
 						#get number of stars
@@ -428,11 +437,13 @@ class Amazon():
 						reg = re.compile("#([0-9]|,)*")
 						reg = reg.search(str(item))
 						if str(type(reg)) != "<class 'NoneType'>":
-							D.append(reg.group())
-							print(reg.group())
+							D.append(reg.group() + "in Books")
+							print(reg.group() + " in Books")
 						for thing in item.find_all("a"):
-							D.append(thing.string)
-							print(thing.string)
+							if thing.string not in D and thing.string != "Books":
+								if thing.string != "See Top 100 in Books":
+									D.append(thing.string)
+									print(thing.string)
 				J['details'] = D
 
 				#get the most helpful customer reviews
@@ -456,7 +467,6 @@ class Amazon():
 				JSO = json.dumps(J)
 				#JSO = json.loads(JSO)
 				S.append(JSO)
-				f2.write(str(type(JSO)))
 				f2.write(str(JSO))
 				f2.write("\n\n\n\n")
 
