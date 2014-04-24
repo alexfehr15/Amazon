@@ -502,6 +502,117 @@ def parse_command_line():
                         help="output format")
     return parser.parse_args()
 
+
+class TableHandler(object):
+    # Produce Table header
+    def header(self, hdata):
+        pass
+
+    # Produce single row of output
+    def row(self, rdata):
+        pass
+
+
+class HTMLTableHandler(TableHandler):
+    def header(self, hdata):
+        print("<!DOCTYPE HTML>\n<html>\n<head>")
+        print("<title>IMDB Movie Resutls</title>\n</head>")
+        print("<body>")
+        print("<table border=\"1\" style=\"300px\">")
+        print("\t<tr>")
+        for h in hdata:
+            print("\t\t<th>{0}</th>".format(h))
+        print("\t</tr>")
+
+    def row(self, rdata):
+        print("\t<tr>")
+        for r in rdata:
+            print("\t\t<td>{0}</td>".format(str(r).strip()))
+        print("\t</tr>")
+
+
+class XMLTableHandler(TableHandler):
+    def header(self, hdata):
+        print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
+        print("<IMDB>")
+
+    def row(self, rdata):
+        L = ["Votes", "Rating", "Year", "Title"]
+        print("\t<Movie>")
+        for i in range(0, len(rdata)):
+            print("\t\t<{0}>{1}</{0}>".format(
+                L[i], str(rdata[i]).strip().replace("&", "&amp;")))
+        print("\t</Movie>")
+
+
+class CSVTableHandler(TableHandler):
+	def header(self, hdata):
+		#TESTING
+		f = open("csv.txt", "w", encoding="utf-8")
+		for i in range(0, len(hdata)):
+			if i == len(hdata) - 1:
+				try:
+					print(hdata[i], end='')
+				except UnicodeEncodeError as u:
+					print("***encoding error***", end='')
+			else:
+				try:
+					print("{0}, ".format(hdata[i]), end='')
+				except UnicodeEncodeError as u:
+					print("***encoding error***, ", end='')
+		print()
+		f.close()
+
+	def row(self, rdata):
+		for i in range(0, len(rdata)):
+			if i == len(rdata) - 1:
+				try:
+					print(str(rdata[i]).strip(), end='')
+				except UnicodeEncodeError as u:
+					print("***encoding error***", end='')
+			else:
+				try:
+					print("{0}, ".format(str(rdata[i]).strip()), end='')
+				except UnicodeEncodeError as u:
+					print("***encoding error***, ", end='')
+		print()
+
+class MoviePrinter(object):
+    def __init__(self, handler):
+        self.handler = handler
+
+    def print_movie_table(self, J):
+        # print header
+        L = []
+        B = []
+        for key in J:
+        	if str(type(J[key])) == "<class 'list'>":
+        		for k in J[key]:
+        			if key == "details":
+        				if ":" in k:
+        					L.append(k.split(":")[0])
+        					B.append(k.split(":")[1].strip())
+        				else:
+        					L.append("details")
+        					B.append(k)
+        			elif key == "reviews":
+        				for i in J[key]:
+        					L.append(key)
+        					B.append(i)
+        				break
+        			elif key == "authors":
+        				for i in J[key]:
+        					L.append(key)
+        					B.append(i)
+        				break
+        	else:
+        		L.append(key)
+        		B.append(J[key])
+        self.handler.header(L)
+
+        # print movie data
+        self.handler.row(B)
+
 if __name__ == "__main__":
 	#parse command line arguments
 	args = parse_command_line()
@@ -526,3 +637,21 @@ if __name__ == "__main__":
 	elif args.u:
 		JSON_book = obj.parse_url()
 		result = persist(JSON_book, True)
+
+	JSON_book = json.loads(JSON_book)
+
+	#produce output of desired type
+	if output_type == "csv":
+		handler = CSVTableHandler()
+	elif output_type == "html":
+		handler = HTMLTableHandler()
+	elif output_type == "xml":
+		handler = XMLTableHandler()
+
+	printer = MoviePrinter(handler)
+	printer.print_movie_table(JSON_book)
+
+	if output_type == "html":
+		print("</table>\n</body>\n</html>")
+	elif output_type == "xml":
+		print("</IMDB>")
