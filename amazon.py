@@ -213,8 +213,7 @@ class Amazon():
 		if str(type(reg)) != "<class 'NoneType'>":
 			new_price = reg.group()
 			print("New " + new_price)
-		new_price = new_price.replace("$", "")
-		J['price_new'] = float(new_price)
+		new_price = float(new_price.replace("$", ""))
 
 		#get the rental price
 		rent_price = "-1"
@@ -225,7 +224,24 @@ class Amazon():
 			rent_price = reg.group()
 			print("Rent " + rent_price)
 		rent_price = float(rent_price.replace("$", ""))
-		J['price_rent'] = float(rent_price)
+				
+		#try something else if price is still
+		counter = 0
+		if new_price == -1:
+			for tag in bsoup.find_all(class_="rentPrice"):
+				counter += 1
+				if str(type(tag.contents)) != "<class 'NoneType'>":
+					if counter == 1:
+						new_price = tag.contents[0].strip()
+						new_price = float(new_price.replace("$", ""))
+					elif counter == 2:
+						rent_price = tag.contents[0].strip()
+						rent_price = float(rent_price.replace("$", ""))
+					print(tag.contents[0].strip())
+
+		#put prices in
+		J['price_new'] = new_price
+		J['price_rent'] = rent_price
 
 		#get the product details
 		D = []
@@ -273,6 +289,12 @@ class Amazon():
 			R.append(str(to_search))
 			f.write(str(to_search))
 			f.write("\n")
+		#method 2
+		if len(R) == 0:
+			for tag in bsoup.find_all(class_="mt9 reviewText"):
+				f.write(str(tag.contents[1]))
+				item = remove_html_tags(str(tag.contents[1]))
+				R.append(item)
 		J['reviews'] = R
 
 		#TESTING
@@ -440,10 +462,6 @@ class Amazon():
 						item = remove_html_tags(str(tag.contents[1]))
 						R.append(item)
 				J['reviews'] = R
-
-				#get the most helpful reviews
-				R = []
-
 
 				#TESTING
 				JSO = json.dumps(J)
