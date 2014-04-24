@@ -184,13 +184,17 @@ class Amazon():
 			tag = tag.find_parent("div")
 			for item in tag.find_all("a"):
 				author = item.string
-				A.append(author)
-				print(author)
+				if str(type(author)) != "<class 'NoneType'>":
+					if "Visit" not in author:
+						if "search" not in author:
+							if "about" not in author:
+								A.append(author)
+								print(author)
 		#method 2
 		else:
 				for tag in bsoup.find_all(class_="author notFaded"):
 					first = tag.a.string
-					if "Visit" in first:
+					if "Visit" in first or str(type(first)) == "<class 'NoneType'>":
 						temp = tag.find("span")
 						author = temp.contents[0].strip()
 						A.append(author)
@@ -293,9 +297,6 @@ class Amazon():
 		#loop through the directory (need to eliminate leading /)
 		for fn in os.listdir(os.path.join(os.getcwd(), self.filename)):
 			if os.path.isfile(os.path.join(os.getcwd(), self.filename, fn)):
-				#TESTING
-				print(fn)
-
 				#convert file to soup
 				test = os.path.join(os.getcwd(), self.filename, fn)
 				bsoup = BeautifulSoup(open(test))
@@ -323,30 +324,70 @@ class Amazon():
 
 				#get the author of the book
 				A = []
-				for tag in bsoup.find_all(class_="author notFaded"):
-					author = tag.a.string
-					A.append(author)
-					print(tag.a.string)
+				#method 1
+				tag = bsoup.find(class_="parseasinTitle")
+				if str(type(tag)) != "<class 'NoneType'>":
+					tag = tag.find_parent("div")
+					for item in tag.find_all("a"):
+						author = item.string
+						if str(type(author)) != "<class 'NoneType'>":
+							if "Visit" not in author:
+								if "search" not in author:
+									if "about" not in author:
+										A.append(author)
+										print(author)
+				#method 2
+				else:
+						for tag in bsoup.find_all(class_="author notFaded"):
+							first = tag.a.string
+							if "Visit" in first or str(type(first)) == "<class 'NoneType'>":
+								temp = tag.find("span")
+								author = temp.contents[0].strip()
+								A.append(author)
+								print(author)
+							else:
+								author = first
+								A.append(author)
+								print(author)
 				J['authors'] = A
 
 				#get the new price
-				price_new = ""
+				new_price = "-1"
 				tag = bsoup.find(id="buyNewSection")
 				reg = re.compile("\$[0-9]*\.[0-9]*")
 				reg = reg.search(str(tag))
 				if str(type(reg)) != "<class 'NoneType'>":
 					new_price = reg.group()
 					print("New " + new_price)
-				J['price_new'] = new_price
+				new_price = float(new_price.replace("$", ""))
 
 				#get the rental price
-				rent_price = ""
+				rent_price = "-1"
 				tag = bsoup.find(id="rentBuySection")
 				reg = re.compile("\$[0-9]*\.[0-9]*")
 				reg = reg.search(str(tag))
 				if str(type(reg)) != "<class 'NoneType'>":
 					rent_price = reg.group()
 					print("Rent " + rent_price)
+				rent_price = float(rent_price.replace("$", ""))
+				
+
+				#try something else if price is still
+				counter = 0
+				if new_price == -1:
+					for tag in bsoup.find_all(class_="rentPrice"):
+						counter += 1
+						if str(type(tag.contents)) != "<class 'NoneType'>":
+							if counter == 1:
+								new_price = tag.contents[0].strip()
+								new_price = float(new_price.replace("$", ""))
+							elif counter == 2:
+								rent_price = tag.contents[0].strip()
+								rent_price = float(rent_price.replace("$", ""))
+							print(tag.contents[0].strip())
+
+				#put prices in
+				J['price_new'] = new_price
 				J['price_rent'] = rent_price
 
 				#get the product details
@@ -384,8 +425,6 @@ class Amazon():
 				J['details'] = D
 
 				#get the most helpful customer reviews
-
-
 				R = []
 				for tag in bsoup.find_all(id=re.compile("revData-dpReviewsMostHelpful")):
 					item = tag.find_all("div")
@@ -394,7 +433,17 @@ class Amazon():
 					R.append(str(to_search))
 					f.write(str(to_search))
 					f.write("\n")
+				#method 2
+				if len(R) == 0:
+					for tag in bsoup.find_all(class_="mt9 reviewText"):
+						f.write(str(tag.contents[1]))
+						item = remove_html_tags(str(tag.contents[1]))
+						R.append(item)
 				J['reviews'] = R
+
+				#get the most helpful reviews
+				R = []
+
 
 				#TESTING
 				JSO = json.dumps(J)
@@ -404,13 +453,15 @@ class Amazon():
 				f2.write(str(JSO))
 				f2.write("\n\n\n\n")
 
+				#TESTING
+				print("\n")
+
 		#TESTING
 		f.close()
 		f3.close()
 		f2.close()
 
 		return S
-
 
 def remove_html_tags(data):
 	p = re.compile("<.*?>")
