@@ -1,0 +1,1 @@
+book = {"title" : "Cookbook", "authors" : ["name_1", "name_n"], "price_new" : 29.99, "price_rent" : 11.59, "details" : ["detail1", "detail2", "detailn" ], "reviews" : ["review_1", "review_n"]}

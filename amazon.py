@@ -196,16 +196,47 @@ class Amazon():
 		#get the product details
 		tag = bsoup.find(id="productDetailsTable")
 		for item in tag.find_all("li"):
-			#print(item.b.string + " " + str(item.contents))#item.contents[1].strip())
-			#print(str(item.contents[0]) + " " + str(item.contents[1]).strip())
-			#if str(type(item.contents[1])) != "<class 'NoneType'>":
+			#everything besides avg customer reviews and amazon best sellers rank
 			if str(item.b.string).strip() != "Average Customer Review:" and str(item.b.string).strip() != "Amazon Best Sellers Rank:":
 				print(str(item.b.string).strip() + " " + str(item.contents[1]).strip())
+			#average customer review
+			elif str(item.b.string).strip() == "Average Customer Review:":
+				#get number of stars
+				reg = re.compile("([0-9]|\.)* out of 5 stars")
+				reg = reg.search(str(item))
+				if str(type(reg)) != "<class 'NoneType'>":
+					print(reg.group())
+				#get number of reviews 
+				reg = re.compile("([0-9]|,)* customer reviews")
+				reg = reg.search(str(item))
+				if str(type(reg)) != "<class 'NoneType'>":
+					print(reg.group())
+			#amazon best sellers rank
 			else:
-				print(item.contents)
-		#print(tag.li.contents[1])
-		#for child in tag.li.children:
-			#print(child)
+				reg = re.compile("#([0-9]|,)*")
+				reg = reg.search(str(item))
+				if str(type(reg)) != "<class 'NoneType'>":
+					print(reg.group())
+				for thing in item.find_all("a"):
+					print(thing.string)
+
+		#get the most helpful customer reviews
+		#TESTING
+		f = open("out.txt", "w", encoding="utf-8")
+
+		for tag in bsoup.find_all(id=re.compile("revData-dpReviewsMostHelpful")):
+			item = tag.find_all("div")
+			to_search = str(item[len(item)-1])
+			to_search = remove_html_tags(str(to_search))
+			f.write(str(to_search))
+			f.write("\n")
+
+		#TESTING
+		f.close()
+
+def remove_html_tags(data):
+	p = re.compile("<.*?>")
+	return p.sub('', data)
 
 def parse_command_line():
 	"""
